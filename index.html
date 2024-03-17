@@ -8,9 +8,9 @@
     <title>Homepage</title>
 </head>
 
-<body bgcolor = "Lightgray">
+<body>
    
-    <section class="header"> <!-- I have opted to use a table for the current state of the website, I will change the styling once css is incorporated. -->
+    <div class="Navbar"> <!-- I have opted to use a table for the current state of the website, I will change the styling once css is incorporated. -->
         <table style="width: 1000px;">
             <tr>
                 <th style="width: px;">
@@ -32,21 +32,23 @@
                 </nav>    
             </tr>
         </table>
-    </section>
-
-    
+    </div
+    >
     <div class="Hero">  
         <h1 style="text-align: center;"> Welcome to my website</h1>
     </div>
 
     <!-- No styling yet on my site, so all the code below looks out of place on my site for now :( -->
-    <div class="content">  
-        <h1 style="text-align: center;">Content</h1>
+    <div class="content" style="text-align: center;">  
+       
+        <h1 id="content-header" style="text-align: center;">Content</h1>
+        <img src="../WSOA3028A_2565053/Images/Content.jpeg" style="display: block; margin: 0 auto;">
+        <p id= "content-description" style="text-align: center;">Browse my Blogposts</p>
+        <a  href="Pages/Blogposts/blogposts.html"> Take me there..</a>
     </div>
 
     <!-- Will be placed at the bottom when I use styling-->
-    <div>
-        <h1 style="text-align: center;">Contact Me</Menu></h1>
+    <div class="Footer">
         <address class="footer">
             <p>&copy; 2024 <span class="fn">My portfolio</span> | Created by Caleb Calvin.</p>
         </address>
