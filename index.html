@@ -10,49 +10,44 @@
 
 <body>
    
-    <div class="Navbar"> <!-- I have opted to use a table for the current state of the website, I will change the styling once css is incorporated. -->
-        <table style="width: 1000px;">
-            <tr>
-                <th style="width: px;">
-                    <h2 style="text-align: left;">
-                         <b>
-                            <i>
-                                Caleb's Portfolio
-                            </i>
-                        </b>
-                    </h2>
-                </th>
+    <Header class="Header"> 
+        <h1 class= "Navbar-Heading">
+            <b>
+                <i>
+                    Caleb's Portfolio
+                </i>
+            </b>
+        </h1>
+               
+        <nav class="navlist">  
+            <a href="Pages/About me/about.html"> About me</a>
+            <a href="Pages/Portfolio/portfolio.html"> Portfolio</a>  
+            <a href="Pages/Blogposts/blogposts.html"> Blogposts</a>
+            <a href="Pages/Essays/essays.html"> Essays</a>
+            <a href="Pages/Web Design/design.html"> Web site design</a>                         
+        </nav>    
+    </Header>
 
-                <nav class="navlist">  
-                    <td><a  href="Pages/About me/about.html"> About me </a></td>
-                    <td><a  href="Pages/Portfolio/portfolio.html"> Portfolio</a></td>   
-                    <td><a  href="Pages/Blogposts/blogposts.html"> Blogposts </a></td>
-                    <td><a  href="Pages/Essays/essays.html"> Essays </a></td>
-                    <td><a  href="Pages/Web Design/design.html"> Web site design </a></td>                                
-                </nav>    
-            </tr>
-        </table>
-    </div
-    >
-    <div class="Hero">  
-        <h1 style="text-align: center;"> Welcome to my website</h1>
-    </div>
+    <main>
+        <article class="Hero">  
+            <h2> Welcome to my website</h1>
+        <article>
+    
+        <section class="content" style="text-align: center;">  
+            <aside>
+                <h2 id="content-header" style="text-align: center;">Content</h2>
+                <figure src="../WSOA3028A_2565053/Images/Content.jpeg" style="display: block; margin: 0 auto;"></figure>
+                <p id= "content-description" style="text-align: center;">Browse my Blogposts</p>
+                <a  href="Pages/Blogposts/week4.html"> Take me there..</a>
+            </aside>
+        </section>
+    </main>
 
-    <!-- No styling yet on my site, so all the code below looks out of place on my site for now :( -->
-    <div class="content" style="text-align: center;">  
-       
-        <h1 id="content-header" style="text-align: center;">Content</h1>
-        <img src="../WSOA3028A_2565053/Images/Content.jpeg" style="display: block; margin: 0 auto;">
-        <p id= "content-description" style="text-align: center;">Browse my Blogposts</p>
-        <a  href="Pages/Blogposts/blogposts.html"> Take me there..</a>
-    </div>
-
-    <!-- Will be placed at the bottom when I use styling-->
-    <div class="Footer">
+    <footer class="Footer">
         <address class="footer">
             <p>&copy; 2024 <span class="fn">My portfolio</span> | Created by Caleb Calvin.</p>
         </address>
-    </div>
+    </footer>
 
 </body>
 
