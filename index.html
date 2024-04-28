@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-->
     <meta name="description" content="Welcome to Caleb Calvin's Portfolio - Explore Caleb's work, blogposts, essays, and web design projects.">
     <meta name="keywords" content="Caleb Calvin, Portfolio, Blogposts, Essays, Web Design">
     <meta name="author" content="Caleb Calvin">
-->
     <meta property="og:title" content="Caleb Calvin's Portfolio">
     <meta property="og:description" content="Explore Caleb Calvin's Portfolio - Browse through Caleb's work, blogposts, essays, and web design projects.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Caleb Calvin's Portfolio">
     <meta name="language" content="English"> 
+
+    <script type = "application/ld+json">
+        {
+            "@content": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2565053/",
+            "@type": "Game Development portfolio work",
+            "headline": "Caleb Calvin's Portfolio",
+            "author": [{
+                "@type": "Person",
+                "name": "Caleb Calvin"
+                "url": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2565053"
+            }]
+        }
+    </script>
+    
+    <script type="module"> 
+        import {initialize } from "./scripts/IndexPages/menu.js" 
+        initialize("Home")
+    </script>
     <title>Caleb's Portfolio</title>
 </head>
 <body>
@@ -24,17 +40,7 @@
                 </i>
             </b>
         </h1>
-               
-        <nav class="navlist">  
-            <ul>
-               <li><a href="Pages/About me/about.html"> About me</a></li>
-               <li><a href="Pages/Portfolio/portfolio.html"> Portfolio</a></li>  
-               <li><a href="Pages/Blogposts/blogposts.html"> Blogposts</a></li>
-               <li><a href="Pages/Essays/essays.html"> Essays</a></li>
-               <li><a href="Pages/Web Design/design.html"> Web site design</a></li>  
-            </ul>
-                              
-        </nav>    
+        <nav></nav>    
     </Header>
     <hr>
 
