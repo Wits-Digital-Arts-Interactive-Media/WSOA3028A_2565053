@@ -1,6 +1,6 @@
 const menuItems = [
     {name: "Home", href: "/index.html"},
-    {name: "Blog", href: "/Pages/Blogposts/index.html"},
+    {name: "Blog", href: "/Pages/Blogposts/blogposts.html"},
     {name: "Essays", href: "/Pages/Essays/essays.html"},
     {name: "Portfolio", href: "/Pages/Portfolio/portfolio.html"},
     {name: "Design", href: "/Pages/Web Design/design.html"},
@@ -29,5 +29,5 @@ export function initialise(currentPage){
     }
     nav.appendChild(ul)
 
-    
+
 }
