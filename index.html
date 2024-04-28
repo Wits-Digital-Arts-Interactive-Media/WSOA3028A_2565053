@@ -12,24 +12,25 @@
     <meta property="og:site_name" content="Caleb Calvin's Portfolio">
     <meta name="language" content="English"> 
 
-    <script type = "application/ld+json"> ==$0
+    <script type="application/ld+json">
         {
-            "@content": https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2565053",
+            "@context": "https://schema.org",
             "@type": "Website",
+            "url": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2565053",
             "headline": "Caleb Calvin's Portfolio",
-            "author": [{
+            "author": {
                 "@type": "Person",
                 "name": "Caleb Calvin"
-                "url": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2565053/Pages/About Me/about.html"
-            }]
+            }
         }
     </script>
-
-    <script type="module"> import { initialise } from "./Scripts/menu.js"
-        initialise("Home") 
+    <script src="./Scripts/menu.js" type="module"></script>
+    <script type="module">
+        import { initialise } from "./Scripts/menu.js";
+        initialise("Home");
     </script>
 
-    <script src = "./Scripts/menu.js"> </script>
+  
     <title>Caleb's Portfolio</title>
 </head>
 <body>
