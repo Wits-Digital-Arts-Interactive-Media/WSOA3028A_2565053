@@ -12,7 +12,7 @@
     <meta property="og:site_name" content="Caleb Calvin's Portfolio">
     <meta name="language" content="English"> 
 
-    <script type = "application/ld+json">
+    <script type = "application/ld+json"> ==$0
         {
             "@content": https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2565053",
             "@type": "Website",
@@ -24,10 +24,12 @@
             }]
         }
     </script>
-    <script type="module"> 
-        import {initialize } from "./scripts/IndexPage/menu.js" 
-        initialize("Home")
+
+    <script type="module"> import { initialise } from "./Scripts/menu.js"
+        initialise("Home") 
     </script>
+
+    <script src = "./Scripts/menu.js"> </script>
     <title>Caleb's Portfolio</title>
 </head>
 <body>
@@ -41,7 +43,6 @@
         </h1>
                
         <nav class="navlist">
-            
         </nav>    
     </Header>
     <hr>
@@ -55,7 +56,7 @@
         <section class="content" style="text-align: center;">  
             <aside>
                 <h2 id="content-header" style="text-align: center;">Content</h2>
-                <img src="../WSOA3028A_2565053/Images//Index page/Content.jpeg" style="display: block; margin: 0 auto;"></img>
+                <img src="Images/Index page/Content.jpeg" style="display: block; margin: 0 auto;"></img>
                 <p id= "content-description" style="text-align: center;">Browse my Blogposts</p>
                 <button id="btn-layout-1"><a  href="Pages/Blogposts/week4.html"> Take me there</a></button>
             </aside>

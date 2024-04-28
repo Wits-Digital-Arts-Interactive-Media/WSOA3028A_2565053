@@ -1,12 +1,13 @@
-const menuItems = [
-    {name: "Home", href:""},
-    {name: "Blogposts", href: `${root} Pages/Blogposts/blogposts.html`},
-    {name: "Essays", href: `${root} Pages/Essays/essays.html`},
-    {name: "Portfolio", href: `${root} Pages/Portfolio/portfolio.html`},
-    {name: "Web site Design", href: `${root} Pages/Web Design/design.html`},
-    {name: "About Me", href: `${root} Pages/About Me/about.html`},
-];
+const root = "WSOA3028A_2565053"
 
+const menuItems = [
+    {name: "Home", href: root + "/index.html"},
+    {name: "Blog", href: `${root}/Pages/Blogposts/blogposts.html`},
+    {name: "Essays", href: `${root}/Pages/Essays/essays.html`},
+    {name: "Portfolio", href: `${root}/Pages/Portfolio/portfolio.html`},
+    {name: "Design", href: `${root}/Pages/Web Design/design.html`},
+    {name: "About", href: `${root}/Pages/About me/about.html`},
+];
 export function initialise(currentPage){
 
     console.log("worked")
@@ -30,6 +31,5 @@ export function initialise(currentPage){
     }
     nav.appendChild(ul)
 
-    console.log("Work");
     
 }
