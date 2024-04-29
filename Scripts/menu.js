@@ -20,7 +20,13 @@ export function initialise(currentPage){
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             li.appendChild(a)
-
+           
+            a.addEventListener('mouseover', () => {
+            a.style.fontSize = '1.2em';
+            });
+            a.addEventListener('mouseout', () => {
+            a.style.fontSize = '1em';
+            });
         }
         else{
             li.innerText = menuItem.name
@@ -29,15 +35,4 @@ export function initialise(currentPage){
     }
     nav.appendChild(ul)
 
-
-function animateHeading() {
-    var heading = document.getElementById('animated-heading');
-    heading.style.fontSize = '48px'; // Change font size
-    setTimeout(function() {
-    heading.style.fontSize = '36px'; // Restore original font size after 1 second
-    }, 1000); // 1000 milliseconds = 1 second
-    }
-
-    // Call the function to start the animation
-    animateHeading();
 }
