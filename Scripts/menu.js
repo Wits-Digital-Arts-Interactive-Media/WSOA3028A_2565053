@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { text: "Essays", href: "Pages/Essays/essays.html" },
             { text: "Portfolio", href: "Pages/Portfolio/portfolio.html" },
             { text: "Design", href: "Pages/Web Design/design.html" },
-            { text: "About", href: "Pages/About me/about.html" }
+            { text: "About-me", href: "Pages/About me/about.html" }
         ];
 
         // Create and append navigation elements
