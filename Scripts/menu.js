@@ -1,10 +1,12 @@
+const root = "/WSOA3028A_2565053"
+
 const menuItems = [
-    {name: "Home", href: "WSOA3028A_2565053/index.html"},
-    {name: "Blog", href: "WSOA3028A_2565053/Pages/Blogposts/blogposts.html"},
-    {name: "Essays", href: "WSOA3028A_2565053/Pages/Essays/essays.html"},
-    {name: "Portfolio", href: "WSOA3028A_2565053/Pages/Portfolio/portfolio.html"},
-    {name: "Design", href: "WSOA3028A_2565053/Pages/Web Design/design.html"},
-    {name: "About", href: "WSOA3028A_2565053/Pages/About me/about.html"},
+    {name: "Home", href: root + "/index.html"},
+    {name: "Blog", href: `${root}/Pages/Blogposts/blogposts.html`},
+    {name: "Essays", href: `${root}/Pages/Essays/essays.html`},
+    {name: "Portfolio", href: `${root}/Pages/Portfolio/portfolio.html`},
+    {name: "Design", href: `${root}/Pages/Web Design/design.html`},
+    {name: "About", href: `${root}/Pages/About me/about.html`},
 ];
 export function initialise(currentPage){
 
@@ -29,5 +31,5 @@ export function initialise(currentPage){
     }
     nav.appendChild(ul)
 
-
+    
 }
