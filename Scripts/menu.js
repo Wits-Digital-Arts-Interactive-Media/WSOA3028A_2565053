@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Define navigation items
         const navItems = [
             { text: "Home", href: "index.html" },
-            { text: "Blog", href: "Blogposts/blogposts.html" },
-            { text: "Essays", href: "Essays/essays.html" },
-            { text: "Portfolio", href: "Portfolio/portfolio.html" },
-            { text: "Design", href: "Web Design/design.html" },
-            { text: "About", href: "About me/about.html" }
+            { text: "Blog", href: "Pages/Blogposts/blogposts.html" },
+            { text: "Essays", href: "Pages/Essays/essays.html" },
+            { text: "Portfolio", href: "Pages/Portfolio/portfolio.html" },
+            { text: "Design", href: "Pages/Web Design/design.html" },
+            { text: "About", href: "Pages/About me/about.html" }
         ];
 
         // Create and append navigation elements
