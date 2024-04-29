@@ -1,11 +1,14 @@
+const root = "/WSOA3028A_2565053"
+
 const menuItems = [
-    {name: "Home", href: "/index.html"},
-    {name: "Blog", href: "/Pages/Blogposts/blogposts.html"},
-    {name: "Essays", href: "/Pages/Essays/essays.html"},
-    {name: "Portfolio", href: "/Pages/Portfolio/portfolio.html"},
-    {name: "Design", href: "/Pages/Web Design/design.html"},
-    {name: "About", href: "/Pages/About me/about.html"},
+    { name: "Home", href: "/WSOA3028A_2565053/index.html" },    
+    { name: "Blogs", href: "/WSOA3028A_2565053/Blogposts/blogposts.html" },
+    { name: "Essays", href: "/WSOA3028A_2565053/Essays/essays.html" },
+    { name: "Portfolio", href: "/WSOA3028A_2565053/Portfolio/portfolio.html" },
+    { name: "Design", href: "/WSOA3028A_2565053/Web Design/design.html" },
 ];
+
+
 export function initialise(currentPage){
 
     console.log("worked")
