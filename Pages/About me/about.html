@@ -7,6 +7,12 @@
     <meta name="description" content="Caleb's Bio">
     <meta name="author" content="Caleb Calvin">
 
+    <script type="module">
+        import { initialise } from "./Scripts/menu.js";
+        initialise("About");
+    </script>
+    <script src="./Scripts/menu.js" type="module"></script>
+    
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -19,12 +25,6 @@
             }
         }
     </script>
-    <script src="./Scripts/menu.js" type="module"></script>
-    <script type="module">
-        import { initialise } from "./Scripts/menu.js";
-        initialise("About");
-    </script>
-
     <title>About Me</title>
 </head>
 </head>
@@ -40,6 +40,7 @@
         </h1>
 
         <nav class="navList"> 
+            
         </nav>
     </header>
     <hr>
