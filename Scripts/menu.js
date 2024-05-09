@@ -9,10 +9,10 @@ const menuItems = [
     {name: "About", href: `${root}/Pages/About me/about.html`},
     
 ];
-export function initialise(currentPage){                    //creates nav menu based on array. Param = currentPage
+export function initialise(currentPage){                   
 
     console.log("worked")
-    const nav = document.querySelector("header > nav")      //selects nav element in header
+    const nav = document.querySelector("header > nav")      //this will make sure the nav element is selcected within each html document
     const ul = document.createElement("ul")
     for(let menuItem of menuItems)                          //iterates over each menu item in menuItems array
     {
@@ -21,7 +21,7 @@ export function initialise(currentPage){                    //creates nav menu b
         {
             const a = document.createElement("a")            // if its true, an anchor element is made for each menu item
             a.innerText = menuItem.name                     // sets the text content of anchor to the menu item name
-            a.setAttribute("href", menuItem.href)           // sets href attribute to the corresponding url
+            a.setAttribute("href", menuItem.href)           // sets the href attribute to the corresponding to URL
             li.appendChild(a)
 
         }
