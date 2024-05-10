@@ -36,18 +36,18 @@ function loadlatestBlogPage() {
   window.location.href = nextPageUrl;
 }
 
-function loadlatestPage() {
-  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+function loadPortfolioPage() {
+  const nextPageUrl = root + "/Pages/Portfolio/portfolio.html";
   window.location.href = nextPageUrl;
 }
 
-function loadlatestPage() {
-  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+function loadEssayPage() {
+  const nextPageUrl = root + "/Pages/Essays/essays.html";
   window.location.href = nextPageUrl;
 }
 
-function loadlatestPage() {
-  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+function loadDesignPage() {
+  const nextPageUrl = root + "/Pages/Web Design/design.html";
   window.location.href = nextPageUrl;
 }
 

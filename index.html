@@ -26,12 +26,20 @@
             }
         }
     </script>
+    <!---Nav Menu-->
     <script type="module">
 
         import { initialise } from "./Scripts/menu.js";
         initialise("Home");
     </script>
     <script src="./Scripts/menu.js" type="module"></script>
+    <!---Index page - streamline navigation and index page effects-->
+    <script src="Scripts/indexpage.js"></script>
+
+    <!---Index page - streamline navigation and index page effects-->
+    <script src="Scripts/apidog.js"></script>
+
+
     <title>Caleb's Portfolio</title>
 </head>
 <body>
@@ -52,7 +60,6 @@
 
     <main>
         <article class="Hero">
-            <script src="Scripts/indexpage.js"></script>
             <h2 id = "animated-text" style="text-align: center ;"> Welcome to my website</h2>
                 <article>
                     <hr>
@@ -77,7 +84,8 @@
                     <h3> Portfolio</h3>
                         <img src="Images/Index page/Content.jpeg"><!---Place Holder images -->
                             <figcaption>
-                                <button><a href="Pages/Portfolio/portfolio.html">Browse my portfolio</a></button> 
+                            <!--Java script that exectues and loads next page-->
+                            <button onclick="loadPortfolioPage()">Browse Portfolio</button>
                             </figcaption>
                         
                 </figure>
@@ -86,7 +94,7 @@
                     <h3> Essays</h3>
                         <img src="Images/Index page/Content.jpeg"><!---Place Holder images -->
                         <figcaption>
-                            <button><a href="Pages/Essays/essays.html">Browse my latest essay</a></button> 
+                            <button onclick="loadEssayPage()">Browse Essays</button> 
                         </figcaption>
                 </figure>
 
@@ -94,20 +102,23 @@
                     <h3> Website Design</h3>
                         <img src="Images/Index page/Content.jpeg"><!---Place Holder images -->
                             <figcaption>
-                                <button><a href="Pages/Web Design/design.html">Browse my web design</a></button> 
+                                <button onclick="loadDesignPage()">Browse web design</button> 
                             </figcaption>
                 </figure>
                 
             </section>
         </article>
-        
-        <article class="Poke-man">
-            <h3>
-                Poke- man Api
-            </h3>
+        <hr>
 
+        <article>
+            <section id="dog api">  
+                <h2> Random dog API</h2>
+                <p> Below is an api that generates random images/ GIFs of dogs. This is a temporary solution to basic API integration, and I plan on adding a different API in the future, one that is more fitting for my site.<p>
+                <!-- Button to trigger the fetchRandomDogImage function -->
+                <button onclick="fetchAndDisplayRandomDogImage()" style="text-align: center;">Fetch Random Dog Image</button>
+                <img id="dogImage" src="" alt="Random Dog Image" style="display: block; margin: 0 auto;"> 
+            </section>
         </article>
-        
     </main>
     <hr>
 
