@@ -37,17 +37,17 @@ function loadlatestBlogPage() {
 }
 
 function loadPortfolioPage() {
-  const nextPageUrl = root + "/Pages/Portfolio/portfolio.html";
-  window.location.href = nextPageUrl;
+  const PortfolioUrl = root + "/Pages/Portfolio/portfolio.html";
+  window.location.href = PortfolioUrl;
 }
 
 function loadEssayPage() {
-  const nextPageUrl = root + "/Pages/Essays/essays.html";
-  window.location.href = nextPageUrl;
+  const EssayUrl = root + "/Pages/Essays/essays.html";
+  window.location.href = EssayUrl;
 }
 
 function loadDesignPage() {
-  const nextPageUrl = root + "/Pages/Web Design/design.html";
-  window.location.href = nextPageUrl;
+  const DesignUrl = root + "/Pages/Web Design/design.html";
+  window.location.href = DesignUrl;
 }
 
