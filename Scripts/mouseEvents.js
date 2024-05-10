@@ -1,5 +1,5 @@
 function handleMouseEvents() {
-    const text = document.getElementById('animated-Mouse-text');
+    const text = document.getElementsByClassName('navList');
 
     document.addEventListener('mouseover', () => {
         a.style.fontSize = '1.2em';

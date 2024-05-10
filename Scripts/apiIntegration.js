@@ -1,4 +1,3 @@
-
 async function fetchRandomDogImage() {
     try {
       const response = await fetch('https://random.dog/woof.json');
