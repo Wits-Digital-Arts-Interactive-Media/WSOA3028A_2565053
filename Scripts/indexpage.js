@@ -20,3 +20,4 @@ function animateText() {
 document.addEventListener('DOMContentLoaded', function() {
   animateText();
 });
+
