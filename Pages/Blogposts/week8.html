@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!---For Scroll to top-->
+    <script src="../../Scripts/scrolleffect.js"></script>
+
+    <!---creates blog nav menu-->
+    <script type="module">
+        import { initialiseBlog } from "../../Scripts/blogsnav.js";
+        initialise("Week8");
+    </script>
+    <script src="../../Scripts/blogsnav.js"></script>
     <title>Week 8 blogpost</title>
 </head>
 
@@ -136,8 +145,8 @@
                 <a href="week6.html">Back</a>
             </button>
 
-            <button onclick="scrollToTop()">To The Top</button>
-            <script src="../../Scripts/menu.js"></script>
+            <button onclick="scrollToTop()">Scroll up</button>
+     
         </section>
     </main>
 

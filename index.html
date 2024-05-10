@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,12 +32,8 @@
         initialise("Home");
     </script>
     <script src="./Scripts/menu.js" type="module"></script>
-
-
-
     <title>Caleb's Portfolio</title>
 </head>
-
 <body>
     <header class="Header">
         <h1 id="welcomeText">
@@ -48,7 +43,7 @@
                 </i>
             </b>
         </h1>
-
+        <script src="Scripts/mouseEvents.js" type="module"></script>
         <nav class="navList">
  
         </nav>
@@ -57,16 +52,19 @@
 
     <main>
         <article class="Hero">
-            <script src="/Scripts/indexpage.js"></script>
-            <h2 id = "animated-text"style="text-align: center ;"> Welcome to my website</h2>
+            <script src="Scripts/indexpage.js"></script>
+            <h2 id = "animated-text" style="text-align: center ;"> Welcome to my website</h2>
                 <article>
                     <hr>
                     <section class="content" style="text-align: center;">
                         <aside>
                             <h2 id="content-header" style="text-align: center;">Content</h2>
-                            <img src="Images/Index page/Content.jpeg" style="display: block; margin: 0 auto;"></img>
+                            <img src="Images/Index page/Content.jpeg" style="display: block; margin: 0 auto;">
                             <p id="content-description" style="text-align: center;">Browse my Blogposts</p>
-                            <button id="btn-layout-1"><a href="Pages/Blogposts/week10.html"> Take me there</a></button>
+
+                            <!--Java script that exectues and loads next page-->
+                            <button onclick="loadlatestBlogPage()">Take me there</button>
+                            
                         </aside>
                     </section>
                 </article>
@@ -105,7 +103,7 @@
         
         <article class="Poke-man">
             <h3>
-                
+                Poke- man Api
             </h3>
 
         </article>

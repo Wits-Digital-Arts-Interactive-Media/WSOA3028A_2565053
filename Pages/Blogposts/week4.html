@@ -7,7 +7,21 @@
     <meta name="description" content="Caleb Calvin's Week 4 Blogpost - Reflections on goal alignment, information structure, user flow, interface elements, style process, and changes going forward in website design.">
     <meta name="keywords" content="Caleb Calvin, Week 4, Blogpost, Goal Alignment, Information Structure, User Flow, Interface Elements, Style Process, Reflections, Changes">
     <meta name="author" content="Caleb Calvin">
-    <title>Week 4 Blogpost</title>
+   <!---For Scroll to top-->
+   <script src="../../Scripts/scrolleffect.js"></script>
+
+  <!---creates blog nav menu-->
+  <script type="module">
+    import { initialiseBlog } from "../../Scripts/blogsnav.js";
+    initialiseBlog("Week4");
+  </script>
+
+  <script src="../../Scripts/blogsnav.js"></script>
+
+  <!---creates Mouse effects-->
+  <script src="Scripts/mouseEvents.js" type="module"></script>
+
+  <title>Week 4 Blogpost</title>
 </head>
 <body>
   <header>
@@ -75,8 +89,8 @@
       <a href="week6.html">Next</a>
     </button>
 
-    <button onclick="scrollToTop()">To The Top</button>
-    <script src="../../Scripts/menu.js"></script>
+    <button onclick="scrollToTop()">Scroll up</button>
+  
 
   </section>
   </main>

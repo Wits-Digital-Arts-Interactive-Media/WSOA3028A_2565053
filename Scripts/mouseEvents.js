@@ -1,14 +1,19 @@
 function handleMouseEvents() {
-    const text = document.getElementsByClassName('navList');
+  const anchors = document.querySelectorAll('.navList a');
 
-    document.addEventListener('mouseover', () => {
-        a.style.fontSize = '1.2em';
-        });
-        a.addEventListener('mouseout', () => {
-        a.style.fontSize = '1em';
-        });
-  }
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    handleMouseEvents();
+  anchors.forEach(a => {
+      a.addEventListener('mouseover', () => {
+          a.style.fontSize = '1.2em';
+          a.style.color = '#A6B9C8'; // Change color to red (#FF0000) when mouseover
+      });
+
+      a.addEventListener('mouseout', () => {
+          a.style.fontSize = '1em';
+          a.style.color = ''; // Reset color to default when mouseout
+      });
   });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  handleMouseEvents();
+});

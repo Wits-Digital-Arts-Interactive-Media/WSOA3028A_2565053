@@ -9,4 +9,4 @@ async function fetchRandomDogImage() {
     } catch (error) {
       console.error('Error fetching random dog image:', error);
     }
-  }
+}

@@ -1,3 +1,13 @@
+const root = "/WSOA3028A_2565053"
+
+const pageItems = [
+  {name: "Home", href: root + "/index.html"},
+  {name: "Blogs", href: `${root}/Pages/Blogposts/blogposts.html`},
+  {name: "Essays", href: `${root}/Pages/Essays/essays.html`},
+  {name: "Portfolio", href: `${root}/Pages/Portfolio/portfolio.html`},
+  {name: "Design", href: `${root}/Pages/Web Design/design.html`},
+  {name: "About", href: `${root}/Pages/About me/about.html`},
+];
 
 function animateText() {
   const text = document.getElementById('animated-text');
@@ -20,4 +30,24 @@ function animateText() {
 document.addEventListener('DOMContentLoaded', function() {
   animateText();
 });
+
+function loadlatestBlogPage() {
+  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+  window.location.href = nextPageUrl;
+}
+
+function loadlatestPage() {
+  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+  window.location.href = nextPageUrl;
+}
+
+function loadlatestPage() {
+  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+  window.location.href = nextPageUrl;
+}
+
+function loadlatestPage() {
+  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+  window.location.href = nextPageUrl;
+}
 
