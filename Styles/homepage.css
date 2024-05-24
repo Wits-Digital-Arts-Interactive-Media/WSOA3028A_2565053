@@ -1,0 +1,64 @@
+/*Content section*/
+.blog-content{
+    margin: 0px 25px 20px 25px;
+    padding: 10px 25px 10px 25px;
+    background-color: aliceblue;
+}
+
+#content-header{
+    margin: 2px 25px 10px 25px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background-color:#011e30 ;
+    font-size: 1.85rem;
+    text-align: center;
+}
+#Content-section{
+    margin: 0px 150px;
+    color: #A6B9C8;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px; 
+}
+
+
+.content-item{
+    border: 1px solid #011e30;
+    padding: 0px 20px 20px 20px ;
+    margin: 10px 15px 10px 0px;
+    text-align: center;
+    color: #011e30;
+    background-color: #A6B9C8;
+}
+
+img {
+    width: 60%; 
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+button {
+    background-color: #043f64;
+    color: white !important; 
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: #011e30 !important;;
+}
+
+.Api-section{
+    text-align: center;
+
+}
+#dogImage{
+    width: 20%;   
+}

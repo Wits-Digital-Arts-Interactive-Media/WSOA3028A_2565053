@@ -6,22 +6,47 @@ body {
     padding: 0;
 }
 
-/* Texts*/
+/* Headers & Text formatting*/
 #Main-Header {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 12px ;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 5rem;
+    color: #A6B9C8 ;
+}
+
+.Hero {
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 ,h3{
+    font-weight: lighter;
+    font-weight: 400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+p{
+    font-size: 1rem;
 }
 
 header {
-    padding: 0;
     display: flex;
     align-items: center;  
+    background-color: #011e30;
 }
 
-/* Navbar */
 nav {
     margin-left: auto;
-    padding: 0;    
+    padding: 25px;    
     line-height: 1.5; 
 }
 
@@ -34,27 +59,82 @@ header nav ul {
 header nav ul li {
     margin-right: 20px;
     font-size: 0.90rem;
-    list-style-type: none
+    list-style-type: none;
+    color: white;
 }
 
-header nav ul li a{
+header nav ul li a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block; 
     transition: transform 0.2s; 
     text-decoration: none;
-    color: black;
-
+    color: white;
+    padding-bottom: 5px; 
 }
+
 header nav ul li a:hover {
     color: #A6B9C8; 
     text-decoration: underline;
 }
+
 header nav ul li a.active {
     color: #A6B9C8;
-    text-decoration: underline; 
+    text-decoration: none; 
+    border-bottom: 2px solid #A6B9C8;
+}
+/*Images*/
+img {
+    width: 350px; 
+    height: 200px;
+ 
 }
 
-/*index page styles*/
-#first-contentseperation{
+svg {
+    width: 24px;
+    height: 24px;
+    margin: 0px 5px;
+}
+
+svg path {
+    fill: #A6B9C8; 
+    transition: fill 0.3s ease; 
+}
+
+a:hover svg path {
+    fill: #2200ff; 
+}
+/* class styling*/
+.content-seperation {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px 0px;
+    border: none; 
+}
+
+.btn-variation-1 {
+    color: #011e30;
 
 }
+
+/*Footer*/
+footer{
+    text-align: center;
+    margin: 0px;
+    padding: 1px;
+    background-color: #011e30;
+
+}
+address{
+    color: white;
+}
+.fn{
+    color: #b9c7d1;
+}
+    
+/*Organisation*/
+hr{
+    border: none; 
+    height: 2px; 
+    background-color: black; 
+    margin: 0px 25px 0px 25px;   
+}
+
