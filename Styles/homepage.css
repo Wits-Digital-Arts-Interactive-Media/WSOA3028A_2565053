@@ -1,4 +1,17 @@
-/*Content section*/
+/*hero*/
+.Hero {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+
+}
+span{
+    color:  #616ee4;
+}
+/*Content section after hero*/
 .blog-content{
     margin: 0px 25px 20px 25px;
     padding: 10px 25px 10px 25px;
@@ -19,21 +32,32 @@
     
 }
 
+/*4x4 grid for easy access*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1px; 
 }
 
-
-.content-item{
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.content-item {
     border: 1px solid #011e30;
-    padding: 0px 20px 20px 20px ;
-    margin: 10px 15px 10px 0px;
+    padding: 0px 15px 20px 20px;
+    margin: 10px 25px 15px 0px;
     text-align: center;
     color: #011e30;
-    background-color: #A6B9C8;
+    background-color: #eef1f3;
+    transition: transform 0.3s; 
 }
+
+.content-item:hover {
+    transform: scale(1.05); 
+}
+
 
 img {
     width: 60%; 
@@ -42,19 +66,28 @@ img {
 }
 
 button {
-    background-color: #043f64;
-    color: white !important; 
-    border: 1px solid white;
+    background-color: #6a77e7; 
+    color: white !important;
+    border: none; 
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 25px; /* for my rounded cornerss */
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 button:hover {
-    background-color: aliceblue;
-    color: #011e30 !important;;
+    background-color: #ffffff; 
+    color: #000000 !important; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
 }
 
+button:active {
+    transform: translateY(0); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
 .Api-section{
     text-align: center;
 
