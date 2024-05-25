@@ -10,3 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
         link.click();
     });
 });
+document.getElementById('iframe-read').addEventListener('click', function() {
+    openNewTab('/Pages/Essays/collection/WSOA3028A_2565053_UI & UX Analysis.pdf');
+});
+
+function openNewTab(url) {
+    window.open(url, '_blank');
+}

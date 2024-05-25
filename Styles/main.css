@@ -182,7 +182,10 @@ hr{
     background-color: black; 
     margin: 0px 25px 0px 25px;   
 }
-
+iframe{
+    width: 500;   
+    height: 400px;;
+}
 /*Footer*/
 footer{
     text-align: center;

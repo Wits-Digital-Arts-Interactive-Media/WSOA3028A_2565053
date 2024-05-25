@@ -13,8 +13,8 @@ main.essay-content {
 
 /* Styles for the essay sections */
 #Essay-1 {
-    padding: 20px;
-    margin: 30px 300px 30px 100px; /* Adjust margin */
+    padding: 20px 20px 20px 20px;
+    margin: 30px 300px 30px 100px; 
     width: calc(50% - 10px); /* Adjust width to fit two columns with a small gap */
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -26,7 +26,6 @@ main.essay-content {
 #Essay-1:hover{
     transform: scale(1.05); 
 }
-
 #Essay-2 {
     padding: 20px;
     margin: 40px 600px; /* Adjust margin */
