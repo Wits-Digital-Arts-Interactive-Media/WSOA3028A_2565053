@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 document.getElementById('iframe-read').addEventListener('click', function() {
-    openNewTab('/Pages/Essays/collection/WSOA3028A_2565053_UI & UX Analysis.pdf');
+    openNewTab('/WSOA3028A_2565053/Pages/Essays/collection/WSOA3028A_2565053_UI & UX Analysis.pdf');
 });
 
 function openNewTab(url) {
