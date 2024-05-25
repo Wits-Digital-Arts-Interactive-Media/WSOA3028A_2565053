@@ -1,11 +1,66 @@
-#Design-Page-h2{
-    color:  #A6B9C8;;
+/* essay.css */
+
+#Design-header {
+    color: #A6B9C8;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: lighter;
 }
 
-#Essay-1{
+main.essay-content {
+    padding-top: 70px;
+}
+
+/* Styles for the essay sections */
+#Essay-1 {
+    padding: 20px;
+    margin: 30px 300px 30px 100px; /* Adjust margin */
+    width: calc(50% - 10px); /* Adjust width to fit two columns with a small gap */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Essay-1:hover{
+    transform: scale(1.05); 
+}
+
+#Essay-2 {
+    padding: 20px;
+    margin: 40px 600px; /* Adjust margin */
+    width: calc(50% - 10px); /* Adjust width to fit two columns with a small gap */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Essay-2:hover{
+    transform: scale(1.05); 
+}
+#Essay-1-Header,
+#Essay-2-Header {
+    color: #011e30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
     text-align: left;
+    align-self: flex-start;
 }
 
-#Essay-2{
-    
+#Essay-1 p,
+#Essay-2 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+#essay-image {
+    width: 450px; /* Adjust the width as needed */
+    height: 300px;
+    margin-left: 850px; /* Add left margin */
 }

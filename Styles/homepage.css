@@ -46,6 +46,7 @@ span{
 }
 .content-item {
     border: 1px solid #011e30;
+    border-radius: 10px; /* Rounded corners */
     padding: 0px 15px 20px 20px;
     margin: 10px 25px 15px 0px;
     text-align: center;
@@ -65,33 +66,10 @@ img {
     object-fit: cover; 
 }
 
-button {
-    background-color: #6a77e7; 
-    color: white !important;
-    border: none; 
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 25px; /* for my rounded cornerss */
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-button:hover {
-    background-color: #ffffff; 
-    color: #000000 !important; 
-    transform: translateY(-2px); 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
-}
-
-button:active {
-    transform: translateY(0); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
 .Api-section{
     text-align: center;
-
 }
 #dogImage{
+    margin-top: 20px;
     width: 20%;   
 }
