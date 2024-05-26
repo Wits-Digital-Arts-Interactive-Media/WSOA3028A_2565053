@@ -1,0 +1,108 @@
+.about-me-content {
+    margin: 90px 50px 15px 50px;
+}
+
+.about-me-content-container {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1fr; /* Three columns */
+    gap: 20px;
+}
+
+
+#paragraph-style {
+    font-size: 0.9rem;
+}
+
+#about-me-firstInfo {
+    border: 2.5px solid #011e30;
+    border-radius: 50px;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    margin: 0px 10px 0px 0px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #5a7791;
+    color: white;
+    transition: transform 0.2s;
+    text-align: center;
+}
+#about-me-skills
+{
+    border: 1.5px solid #011e30;
+    border-radius: 50px;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 40px;
+    background-color: #A6B9C8;
+    color: white;
+    text-align: center;
+}
+#about-me-programs {
+    border: 1.5px solid #011e30;
+    border-radius: 50px;
+    grid-column: 3;
+    grid-row: 2;
+    margin: 10px 115px 0px 0px;
+    padding: 5px 40px;
+    font-size: 1rem;
+    background-color: #797ea8;
+    color: white;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+#about-me-socials {
+    border: 1.5px solid #011e30;
+    border-radius: 50px;
+    grid-column: 1 ;
+    grid-row: 2;
+    margin: 10px 0px 0px 100px;
+    padding: 5px 40px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #A6B9C8;
+    color: white;
+    transition: transform 0.2s;
+}
+
+#about-me-socials ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+#about-me-socials li {
+    margin: 10px 0;
+    /* Add some margin for spacing */
+}
+
+#about-me-socials a {
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+#about-me-socials a:hover {
+    color: #676eb0;
+    text-decoration: underline;
+    /* Change color on hover */
+}
+
+#about-me-skills:hover,
+#about-me-programs:hover,
+#about-me-socials:hover {
+    transform: scale(1.05);
+    /* Scale up on hover */
+}
+
+#photo-me {
+    margin: 10px auto; /* Center horizontally */
+    height: 40%;
+    width: 200px;
+    border-radius: 10px;
+    justify-self: center; /* Center horizontally */
+    align-self: center; /* Center vertically */
+}
