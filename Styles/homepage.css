@@ -66,10 +66,49 @@ img {
     object-fit: cover; 
 }
 
-.Api-section{
+.Api-section {
     text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-#dogImage{
+
+.Api-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Api-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+#stock-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 5px; /* Adjust padding */
+    text-align: center; /* Align text to the center */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px;
+    margin: 25px 250px; /* Add border radius for rounded corners */
+}
+
+#stock-list li {
+    margin-bottom: 5px;
+}
+
+#stock-info {
     margin-top: 20px;
-    width: 20%;   
+}
+
+#stock-info input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#stock-price,
+#stock-change {
+    margin-top: 10px;
+    font-weight: bold;
 }

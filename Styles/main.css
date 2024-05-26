@@ -175,6 +175,23 @@ a:hover svg path {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+.btn-variation-3{
+    padding: 8px 15px;
+    background-color: #6a77e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-variation-3:hover {
+    background-color: #a0adb9; 
+    color: #ffffff !important; 
+    border-color: #000000; /* Change border color on hover */
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
+}
+
 /*Organisation*/
 hr{
     border: none; 

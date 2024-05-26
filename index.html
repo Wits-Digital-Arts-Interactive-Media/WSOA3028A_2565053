@@ -37,11 +37,6 @@
     <script src="./Scripts/menu.js" type="module"></script>
     <!---Index page - streamline navigation and index page effects-->
     <script src="Scripts/indexpage.js"></script>
-
-    <!---Index page - streamline navigation and index page effects-->
-    <script src="Scripts/apidog.js"></script>
-
-
     <title>Caleb's Portfolio</title>
 </head>
 <body>
@@ -71,7 +66,7 @@
                 </h3>
                 <img src="Images/Index page/BlogImages.jpeg"><!---Place Holder images -->
                 <p>Browse my latest blog</p>
-                <button class="btn-variation-1" onclick="loadlatestBlogPage()">Read more</button>  
+                <button class="btn-variation-3" onclick="loadlatestBlogPage()">Read more</button>  
             </section>
         
             <section class="content-item">
@@ -83,7 +78,7 @@
                 </h3>
                 <img src="Images/Index page/Essays.jpg"><!---Place Holder images -->
                 <p>Browse Essays</p>
-                <button class="btn-variation-1" onclick="loadEssayPage()">Take me there</button> 
+                <button class="btn-variation-3" onclick="loadEssayPage()">Take me there</button> 
             </section>
         
             <section class="content-item">
@@ -94,7 +89,7 @@
                 </h3>
                 <img src="Images/Index page/Portfolio.jpg"><!---Place Holder images -->
                 <p>Browse Portfolio</p>
-                <button class="btn-variation-1" onclick="loadPortfolioPage()">View Portfolio</button>
+                <button class="btn-variation-3" onclick="loadPortfolioPage()">View Portfolio</button>
             </section>
         
             <section class="content-item">
@@ -105,18 +100,38 @@
                 </h3>
                 <img src="Images/Index page/Webdev.jpg"><!---Place Holder images -->
                 <p>Browse the design section of my website</p>
-                <button class="btn-variation-1" onclick="loadDesignPage()">Browse</button>
+                <button class="btn-variation-3" onclick="loadDesignPage()">Browse</button>
             </section>
         </div>
         <hr>
 
-        <article class="Api-section">
+        <div class="Api-section">
+            <section>
+                <h2>Real-Time Stock Price</h2>
+                <p style="margin: 0px 25px;">
+                    Below is a stock API, given my interest in the stock exhange  as well as indicies and someone who is a small time investor. I have included a stock API down below to help me get the current price of a stock.
+                    I have also a list of the symbols you can check.
+                </p>
+                
+                <ul id="stock-list">
+                    <li>Technology: Apple (AAPL), Microsoft (MSFT), Amazon (AMZN), Alphabet (GOOGL), Facebook (FB), NASDAQ (NDAQ)</li>
+                    <li>Finance: JPMorgan Chase (JPM), Bank of America (BAC), Goldman Sachs (GS), Visa (V), Berkshire Hathaway (BRK.B)</li>
+                    <li>Healthcare: Johnson & Johnson (JNJ), Pfizer (PFE), Merck (MRK), Abbott Laboratories (ABT), Bristol-Myers Squibb (BMY)</li>
+                    <li>Energy: Exxon Mobil (XOM), Chevron (CVX), Royal Dutch Shell (RDS.A), BP (BP), TotalEnergies (TTE)</li>
+                    <li>Consumer Goods: Procter & Gamble (PG), Coca-Cola (KO), PepsiCo (PEP), Walt Disney (DIS), Nike (NKE)</li>
+                    <li>Retail: Walmart (WMT), Amazon (AMZN), Alibaba Group (BABA), Costco Wholesale (COST), Home Depot (HD)</li>
+                    <li>Automotive: Tesla (TSLA), General Motors (GM), Ford (F), Toyota (TM), Volkswagen (VWAGY)</li>
+                </ul>
+                NB: API is on free plan, uses are limited.
+                <section id="stock-info">
+                    <input type="text" id="stock-symbol" placeholder="Enter stock symbol" />
+                    <button id="fetch-stock" class="btn-variation-3">Get Stock Price</button>
+                    <p id="stock-price">Price: </p>
+                    <p id="stock-change">Change: </p>
            
-            <h2> Random dog API</h2>
-            <p> Below is an api that generates random images/ GIFs of dogs. This is a temporary solution to basic API integration, and I plan on adding a different API in the future, one that is more fitting for my site.<p>
-            <button class="btn-variation-1" onclick="fetchAndDisplayRandomDogImage()" style="text-align: center;">Fetch Random Dog Image</button>
-            <img id="dogImage" src="" alt="Random Dog Image" style="display: block; margin: 0 auto;"> 
-        </article>
+                </section>
+            </section>
+        <div>
     </main>
     <hr class="content-seperation">
 
@@ -144,7 +159,7 @@
         </section>
         
     </footer>
-
+    <script src="Scripts/financeapi.js"></script>
 </body>
 
 </html>
