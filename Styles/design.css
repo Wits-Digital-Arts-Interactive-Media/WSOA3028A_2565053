@@ -1,0 +1,51 @@
+/* Adjust padding-top as needed */
+main {
+    padding-top: 70px;
+}
+
+.design-header {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1px; 
+}
+
+#iteration-1-Content {
+    border: 1.5px solid #011e30;
+    text-align: center;
+    margin-bottom: 25px; 
+    padding: 20px; 
+}
+
+#iteration-2-Content {
+    border: 1.5px solid #011e30;
+    text-align: center;
+    margin-bottom: 25px;  
+    padding: 20px 50px 20px 50px; 
+}
+#iteration-3-Content {
+    border: 1.5px solid #011e30;
+    text-align: center;
+    padding: 20px 50px 20px 50px; 
+    margin-bottom: 25px; 
+}
+/* Define initial styles */
+#iteration-1-Content,
+#iteration-2-Content,
+#iteration-3-Content {
+    opacity: 0.7; 
+    background-color: rgba(255, 255, 255, 0); 
+    transition: background-color 1s ease-in-out, opacity 3s ease-in-out; 
+}
+
+/* Define hover effect for all sections */
+#iteration-1-Content:hover,
+#iteration-2-Content:hover,
+#iteration-3-Content:hover {
+    opacity: 1; /* Increase opacity on hover */
+    background-color: rgb(164, 196, 216); 
+}
+/* Style header */
+.design-header {
+    font-size: 18px;
+    margin-bottom: 1px; 
+}

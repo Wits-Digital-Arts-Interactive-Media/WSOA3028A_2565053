@@ -46,7 +46,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color:#6a77e7;
+    color:#4d5eff;
     text-decoration: underline;
 }
 
@@ -78,10 +78,10 @@ header nav ul li a.active {
     }
 }
 .Page-header-identifier {
-    color: #A6B9C8;
+    color: #95aeff;
     text-align: center;
-    font-size: 1.8rem;
-    font-weight: lighter;
+    font-size: 2rem;
+ 
 }
 
 h1 {
