@@ -4,29 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!---For Scroll to top-->
-   <script src="../../Scripts/scrolleffect.js"></script>
-
-   <!---creates blog nav menu-->
-  <!---creates blog nav menu-->
-    <script type="module">
-        import { initialiseBlog } from "../../Scripts/blogsnav.js";
-        initialiseBlog("Week6");
-    </script>
+    <link rel="stylesheet" href="../../Styles/main.css">
+    <script src="../../Scripts/scrolleffect.js"></script>
     <script src="../../Scripts/blogsnav.js"></script>
-
     <title>Week 6 blogpost</title>
 </head>
 
 <body>
-    <header>
-        <h1>
-            Week 6 Blogpost: Deloitte & Takealot website anaylysis
-        </h1>
-        <nav></nav>
-    </header>
     <main>
         <article>
+            <h2 class="Page-header-identifier">Week 6</h2>
             <section>
                 <h2>Reflection:</h2>
                 <p>
@@ -73,19 +60,10 @@
                 <p>I managed to get basic navigation, had a lot of problems with trying to get the nav bar to work and after hours of trying the i finally figured out the problem and all i was missing was a fullstop when I was trying to initliase my methods i found that i was calling the script from the correct folder I had to go twice out of the current directory of the html files i was trying to call the java script in, in  essence "../../" was what i was missing, was a tough one to digest.</p>
             </section>
         </article>
-        
-        <a href="week8.html">Next</a>
-        <a href="week4.html">Back</a>
-        
-        <button onclick="scrollToTop()">Scroll up</button>
+          
+        <button class="btn-variation-3" onclick="scrollToTop()">Scroll up</button>
 
     </main>
-
-    <footer>
-        <p>© 2024 My Portfolio | Created by Caleb Calvin</p>
-    </footer>
-
-
 
 </body>
 

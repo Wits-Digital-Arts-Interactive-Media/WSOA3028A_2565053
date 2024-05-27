@@ -14,35 +14,20 @@
   <meta property="og:site_name" content="Caleb Calvin's Portfolio">
   <meta name="language" content="English">
   
-  <!---For Scroll to top-->
+  <link rel="stylesheet" href="../../Styles/main.css">
   <script src="../../Scripts/scrolleffect.js"></script>
-
-  <!---creates blog nav menu-->
-  <script type="module">
-    import { initialiseBlog } from "../../Scripts/blogsnav.js";
-    initialiseBlog("Week2");
-  </script>
   <script src="../../Scripts/blogsnav.js"></script>
-
-  <!---creates Mouse effects-->
-  <script src="Scripts/mouseEvents.js" type="module"></script>
   
   <title>Week 2 Blogpost</title>
 </head>
 <body>
-  <header>
-    <h1 class="Blogpost-Header" style="text-align: center;">
-      <u>
-        Week 2
-      </u>
-    </h1>
-    <nav></nav>
-  </header>
-
+  <h2 class="Page-header-identifier">
+    <u>
+      Week 2
+    </u>
+  </h2>
   <main>
     <section class = "Week 2">
-  
-      
       <h2 id="Week 2 Header">Folder Structure and URL Scheme</h2>
       <p id="Paragraph-Style2">
         With some of my previous knowledge on building games I am fully aware that organizing my project is like laying the groundwork 
@@ -127,21 +112,8 @@
         <li><a href="https://hugo.fyi/#">Hugo</a></li>
         <li><a href="https://techcrunch.com/2024/03/16/linkedin-wants-to-add-gaming-to-its-platform/">TechCrunch Article on LinkedIn</a></li>
       </ol>
-
-      <a href="week3.html">Next</a>
-      
-      <button onclick="scrollToTop()">Scroll up</button>
-    
-
+      <button class="btn-variation-3" onclick="scrollToTop()">Scroll up</button>
     </section>  
   </main>
-  <hr>
-
-  <footer class="Footer">
-    <address class="footer">
-        <p>&copy; 2024 <span class="fn">My portfolio</span> | Created by Caleb Calvin.</p>
-    </address>
-  </footer>
-   
 </body>
 </html>

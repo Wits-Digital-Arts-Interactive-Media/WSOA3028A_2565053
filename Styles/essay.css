@@ -3,11 +3,10 @@ main.essay-content {
     padding-top: 70px;
 }
 
-/* Styles for the essay sections */
 #Essay-1 {
     padding: 20px 20px 20px 20px;
     margin: 30px 300px 30px 100px; 
-    width: calc(50% - 10px); /* Adjust width to fit two columns with a small gap */
+    width: calc(50% - 10px); 
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -20,8 +19,8 @@ main.essay-content {
 }
 #Essay-2 {
     padding: 20px;
-    margin: 40px 600px; /* Adjust margin */
-    width: calc(50% - 10px); /* Adjust width to fit two columns with a small gap */
+    margin: 40px 600px; 
+    width: calc(50% - 10px); 
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,7 +50,7 @@ main.essay-content {
 }
 
 #essay-image {
-    width: 450px; /* Adjust the width as needed */
+    width: 450px; 
     height: 300px;
-    margin-left: 850px; /* Add left margin */
+    margin-left: 850px; 
 }

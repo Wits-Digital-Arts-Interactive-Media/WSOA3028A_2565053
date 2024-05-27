@@ -1,32 +1,32 @@
-const root = "/WSOA3028A_2565053"
 
-const blogItems = [
-    {name: "Week1", href: root + "/Pages/Blogposts/week1.html"},
-    {name: "Week2", href: `${root}/Pages/Blogposts/week2.html`},
-    {name: "Week3", href: `${root}/Pages/Blogposts/week3.html`},
-    {name: "Week4", href: `${root}/Pages/Blogposts/week4.html`},
-    {name: "Week6", href: `${root}/Pages/Blogposts/week6.html`},
-    {name: "Week8", href: `${root}/Pages/Blogposts/week8.html`},
-    {name: "Week9", href: `${root}/Pages/Blogposts/week9.html`},
-    {name: "Week10", href: `${root}/Pages/Blogposts/week10.html`},
- 
-];
+const blogWeeks = [
+	"week1.html",
+	"week2.html",
+	"week3.html",
+	"week4.html",
+	"week6.html",
+	"week8.html",
+	"week9.html",
+	"week10.html",
+	"week11.html",
+    "week12.html",
+    "week13.html",
 
-export function initialiseBlog(currentPage){                   
-    console.log("worked blogs")
-    const nav = document.querySelector("header > nav")    
-    const ul = document.createElement("ol")           
-    for(let blogItem of blogItems) {                    
-        const li = document.createElement("li")           
-        if(currentPage != blogItem.name) {                 
-            const a = document.createElement("a")          
-            a.innerText = blogItem.name                 
-            a.setAttribute("href", blogItem.href)         
-            li.appendChild(a)                      
-        } else {
-            li.innerText = blogItem.name                  
-        }
-        ul.appendChild(li)                                
-    }
-    nav.appendChild(ul)                                   
+]
+let blogIndex = 0;
+
+function moveNext() {
+	if (blogIndex < blogWeeks.length - 1) {
+		blogIndex++;
+		let post = document.getElementById("blogFrame");
+		post.src = blogWeeks[blogIndex];
+	}
+}
+
+function moveBack() {
+	if (blogIndex > 0) {
+		blogIndex--;
+		let post = document.getElementById("blogFrame");
+		post.src = blogWeeks[blogIndex];
+	}
 }

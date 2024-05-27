@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:lighter;
     margin: 0;
@@ -167,6 +167,7 @@ a:hover svg path {
     font-size: 1rem;
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-decoration: none;
 }
 
 .btn-variation-2:hover {
@@ -233,19 +234,29 @@ address{
     width: 200px;
     height: 200px;
 }
+/*For ipad pro & asus zen book fold*/
+@media screen and (max-width: 320px) { 
 
-@media(max-width: 700px){
-    .art{
+    .navList {
+        display: none;
+    }
+
+    .hamburger-menu {
         display: block;
-        margin-left: -25px;
+        cursor: pointer;
     }
 
-    .read-more{
-        margin-bottom: 25px;
-        margin-left: 50px;
+    .navList ul {
+        list-style-type: none;
+        display: block;
+        text-align: center;
     }
 
-    .videos{
-    display: none;    
+    .navList ul li {
+        margin: 10px 0;
+    }
+
+    .navList ul li:last-child {
+        margin-bottom: 0;
     }
 }

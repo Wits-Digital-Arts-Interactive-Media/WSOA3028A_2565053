@@ -1,0 +1,37 @@
+/* Main container styling */
+main {
+    margin-top: 100px;
+}
+
+/* Group projects container styling */
+#Group-Projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px; /* Space between the grid items */
+}
+
+/* Project styling */
+.project {
+    border: 1.5px solid #011e30; /* Border styling */
+    padding: 20px;
+}
+
+.project-header {
+    text-align: center; /* Center aligning text */
+}
+
+.project-content {
+    text-align: left; /* Left aligning text */
+}
+
+.project img {
+    width: 100%; /* Full width image */
+    height: auto;
+    display: block;
+    margin: 10px 0; /* Margin around image */
+}
+
+.project button a {
+    text-decoration: none;
+    color: inherit;
+}

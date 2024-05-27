@@ -5,21 +5,20 @@ const menuItems = [
     {name: "Blogs", href: `${root}/Pages/Blogposts/blogposts.html`},
     {name: "Essays", href: `${root}/Pages/Essays/essays.html`},
     {name: "Portfolio", href: `${root}/Pages/Portfolio/portfolio.html`},
-    {name: "Design", href: `${root}/Pages/Web Design/design.html`},
-    {name: "About", href: `${root}/Pages/About me/about.html`}
-
+    {name: "About", href: `${root}/Pages/About me/about.html`},
+    {name: "Design", href: `${root}/Pages/Web Design/design.html`}
 ];
 
 
 export function initialise(currentPage){                   
-    const nav = document.querySelector("header > nav")      //this will make sure the nav element is selcected within each html document
+    const nav = document.querySelector("header > nav")      
     const ul = document.createElement("ul")
-    for(let menuItem of menuItems){                         //iterates over each menu item in menuItems array
-        const li = document.createElement("li")              //Within each iteration a list element is made for each item
-        if(currentPage != menuItem.name){                     //Condition to check if currentPage name does not match menu item name
-            const a = document.createElement("a")            // if its true, an anchor element is made for each menu item
-            a.innerText = menuItem.name                     // sets the text content of anchor to the menu item name
-            a.setAttribute("href", menuItem.href)           // sets the href attribute to the corresponding to URL
+    for(let menuItem of menuItems){                         
+        const li = document.createElement("li")             
+        if(currentPage != menuItem.name){                    
+            const a = document.createElement("a")            
+            a.innerText = menuItem.name                     
+            a.setAttribute("href", menuItem.href)           
             li.appendChild(a)
         }else{
             li.innerText = menuItem.name
@@ -34,12 +33,10 @@ function handleMouseEvents() {
   anchors.forEach(a => {
       a.addEventListener('mouseover', () => {
           a.style.transform = 'scale(1.2)';
-          //a.style.color = '#A6B9C8'; // Change color to desired color when mouseover
       });
 
       a.addEventListener('mouseout', () => {
           a.style.transform = 'scale(1)';
-          //a.style.color = ''; // Reset color to default when mouseout
       });
   });
 }
@@ -47,6 +44,3 @@ function handleMouseEvents() {
 document.addEventListener('DOMContentLoaded', function() {
   handleMouseEvents();
 });
-
-
-

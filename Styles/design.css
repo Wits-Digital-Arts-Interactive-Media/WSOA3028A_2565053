@@ -1,4 +1,3 @@
-/* Adjust padding-top as needed */
 main {
     padding-top: 70px;
 }
@@ -28,7 +27,7 @@ main {
     padding: 20px 50px 20px 50px; 
     margin-bottom: 25px; 
 }
-/* Define initial styles */
+
 #iteration-1-Content,
 #iteration-2-Content,
 #iteration-3-Content {
@@ -37,14 +36,14 @@ main {
     transition: background-color 1s ease-in-out, opacity 3s ease-in-out; 
 }
 
-/* Define hover effect for all sections */
+
 #iteration-1-Content:hover,
 #iteration-2-Content:hover,
 #iteration-3-Content:hover {
-    opacity: 1; /* Increase opacity on hover */
+    opacity: 1; 
     background-color: rgb(164, 196, 216); 
 }
-/* Style header */
+
 .design-header {
     font-size: 18px;
     margin-bottom: 1px; 

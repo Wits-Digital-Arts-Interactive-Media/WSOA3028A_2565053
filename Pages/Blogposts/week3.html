@@ -13,35 +13,20 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Caleb Calvin's Portfolio">
   <meta name="language" content="English">
-  <!---For Scroll to top-->
+  <link rel="stylesheet" href="../../Styles/main.css">
   <script src="../../Scripts/scrolleffect.js"></script>
-
-
-  <!---creates blog nav menu-->
-  <script type="module">
-    import { initialiseBlog } from "../../Scripts/blogsnav.js";
-    initialiseBlog("Week3");
-  </script>
   <script src="../../Scripts/blogsnav.js"></script>
-
-  <!---creates Mouse effects-->
-  <script src="Scripts/mouseEvents.js" type="module"></script>
   
   <title>Week 3 Blogpost</title>
 </head>
 <body>
-  <header>
-    <h1 class="Blogpost-Header" style="text-align: center;">
+  <main>
+    <h2 class="Page-header-identifier">
       <u>
         Week 3
       </u>
-    </h1>     
-    <nav></nav>
-  </header>
-
-  <main>
+    </h2>
     <section class = "Week 3">
-
       <h2 id="Week 3 Header">Alignment</h2>
       <p id="Paragraph-Style3"> 
         My goal for this website is to create a website that displays my work, my ability or any previous projects I had made solely for employers 
@@ -86,22 +71,12 @@
         this time, I did a lot of research and watched multiple tutorials on HTML. I learnt about the importance of semantic markup language and I
         am excited to put my new found knowledge to the test.
       </p>    
-     
-      <a href="week4.html">Next</a>
-      
-
-      <button onclick="scrollToTop()">Scroll up</button>
+  
+      <button class="btn-variation-3" onclick="scrollToTop()">Scroll up</button>
  
 
     </section>
   </main>
   <hr>
-   
-  <footer >
-    <address class="footer">
-        <p>&copy; 2024 <span class="fn">My portfolio</span> | Created by Caleb Calvin.</p>
-    </address>
-  </footer>
-
 </body>
 </html>
