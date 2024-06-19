@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function loadlatestBlogPage() {
-  const nextPageUrl = root + "/Pages/Blogposts/week10.html";
+  const nextPageUrl = root + "/Pages/Blogposts/blogposts.html";
   window.location.href = nextPageUrl;
 }
 

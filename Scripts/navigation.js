@@ -1,5 +1,3 @@
-const root = "/WSOA3028A_2565053";
-
 function loadIteration1Page() {
     const Iteration1Url = root + "/Pages/Web Design/iteration1.html";
     window.location.href = Iteration1Url;
@@ -13,4 +11,11 @@ function loadIteration2Page() {
 function loadIteration3Page() {
     const DesignUrl = root + "/Pages/Web Design/design.html";
     window.location.href = DesignUrl;
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }

@@ -10,7 +10,7 @@ body {
 header { 
     display: flex;
     align-items: center;
-    background-color: #011e30;
+    background-color: #182b4d;
     position: fixed;
     top: 0;
     width: 100%;
@@ -81,6 +81,7 @@ header nav ul li a.active {
     color: #95aeff;
     text-align: center;
     font-size: 2rem;
+    
  
 }
 
@@ -101,6 +102,7 @@ p {
     font-size: 1rem;
     font-weight: 400;
 }
+
 
 /*Images*/
 img {
@@ -204,7 +206,7 @@ a:hover svg path {
 hr{
     border: none; 
     height: 2px; 
-    background-color: black; 
+    background-color: #182b4d;; 
     margin: 0px 25px 0px 25px;   
 }
 iframe{
@@ -213,18 +215,28 @@ iframe{
 }
 /*Footer*/
 footer{
-    text-align: center;
     margin: 0px;
     padding: 1px;
-    background-color: #011e30;
-
+    background-color: #182b4d;
+}
+.contact-me-header{
+    color: white;  
+    font: bold;  
 }
 address{
     color: white;
+    margin-left: 30px;
+}
+.footer-socials{
+    text-align: center;
+    color: white;  
 }
 .fn{
     color: #b9c7d1;
 }
+span{
+    color:  #2200ff;
+}   
 
 /*Layout for the game videos*/
 .videos{
@@ -260,3 +272,24 @@ address{
         margin-bottom: 0;
     }
 }
+
+.backToTopBtn{
+    position: fixed;
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color:  #b9c7d1;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px
+
+}
+
+.backToTopBtn:hover {
+    background-color: #6a77e7;
+}
+

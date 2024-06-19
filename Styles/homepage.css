@@ -6,11 +6,9 @@
     align-items: center;
     opacity: 0;
     animation: fadeIn 5s forwards;
+}
 
-}
-span{
-    color:  #616ee4;
-}
+
 
 /*Content section after hero*/
 .blog-content{
@@ -23,7 +21,7 @@ span{
     margin: 2px 25px 10px 25px;
     padding: 10px 20px 10px 20px;
     color: white;
-    background-color:#011e30 ;
+    background-color:#182b4d; ;
     font-size: 1.85rem;
     text-align: center;
 }
@@ -46,7 +44,7 @@ span{
     }
 }
 .content-item {
-    border: 1px solid #011e30;
+    border: 1px solid #182b4d;
     border-radius: 10px; /* Rounded corners */
     padding: 0px 15px 20px 20px;
     margin: 10px 25px 15px 0px;
@@ -69,10 +67,7 @@ img {
 
 .Api-section {
     text-align: center;
-    padding: 20px;
-    background-color: #f7f7f7;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .Api-section h2 {
@@ -113,3 +108,4 @@ img {
     margin-top: 10px;
     font-weight: bold;
 }
+

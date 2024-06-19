@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const downloadButton = document.querySelector('.btn-variation-2');
+    const downloadButton = document.getElementById('Download-Essay1');
     
     downloadButton.addEventListener('click', function() {
         // Replace the URL with the actual path to your essay PDF
@@ -10,8 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
         link.click();
     });
 });
+
 document.getElementById('iframe-read').addEventListener('click', function() {
-    openNewTab('/WSOA3028A_2565053/Pages/Essays/collection/WSOA3028A_2565053_UI & UX Analysis.pdf');
+    openNewTab('collection/WSOA3028A_2565053_UI & UX Analysis.pdf');
 });
 
 function openNewTab(url) {
