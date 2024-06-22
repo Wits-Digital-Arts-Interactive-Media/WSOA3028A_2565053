@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const favoriteStockSymbol = 'NDAQ'; // Replace with your favorite stock symbol
+  const favoriteStockSymbol = 'NDAQ'; 
   document.getElementById('stock-symbol').value = favoriteStockSymbol;
 
   document.getElementById('fetch-stock').addEventListener('click', function() {
-      const apiKey = ' 7IFJWKOX8A79IEDB'; // Replace 'demo' with your actual Alpha Vantage API key
+      const apiKey = ' 7IFJWKOX8A79IEDB'; 
       const symbol = document.getElementById('stock-symbol').value.toUpperCase();
       const apiUrl = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
 

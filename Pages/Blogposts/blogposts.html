@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="../../Styles/main.css">
   <link rel="stylesheet" href="../../Styles/blogs.css">
+  <link rel="stylesheet" href="../../Styles/blogsGeneral.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -31,16 +33,17 @@
             }
         }
     </script>
-    <script src="../../Scripts/blogsnav.js"></script>
-    <script src="../../Scripts/menu.js"></script>
-    <script type="module">
+  <script src="../../Scripts/blogsnav.js"></script>
+  <script src="../../Scripts/menu.js"></script>
+  <script src="../../Scripts/navigation.js"></script>
+  <script type="module">
 
-      import { initialise } from "../../Scripts/menu.js";
-      initialise("Blogs");
+    import { initialise } from "../../Scripts/menu.js";
+    initialise("Blogs");
   </script>
 
 
-  <title>Caleb's Blogposts</title>
+  <title>Blogs</title>
 </head>
 
 <body>
@@ -52,60 +55,262 @@
 
   <main>
     <div class="blogContent">
-      <h2 class="Page-header-identifier"> Welcome to my weekly blogs </h2>
+      <h2 class="Page-header-identifier"> A collection of my weekly blogs</h2>
     </div>
-    <center>
-      <iframe class="blogFrame" id="blogFrame" src="week1.html"></iframe>
-    </center>
-    <section>
-      <center id="button-container">
-        <button id="btnBack" class="btn-variation-3" onclick="moveBack()">Back</button> &emsp;
-        <button id="btNext" class="btn-variation-3"onclick="moveNext()">Next</button>
-      </center>
 
-    </section>
+    <div id="blog-posts-container">
+    </div>
+    
+    <div class="timeline">
+      <div class="container left-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week1.html')">
+          <div class="text-box left">
+            <h2>
+              Week 1
+            </h2>
+            <small>
+              Written by Caleb Calvin, 16 February 2024
+            </small>
+            <p>
+              The beginning.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </a>
+      </div>
 
+      <div class="container right-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week2.html')">
+          <div class="text-box">
+            <h2>
+              Week 2
+            </h2>
+            <small>
+              Written by Caleb Calvin, 23 February 2024
+            </small>
+            <p>
+              Interaction and the WWW.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container left-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week3.html')">
+          <div class="text-box left">
+            <h2>
+              Week 3
+            </h2>
+            <small>
+              Written by Caleb Calvin, 1 March 2024
+            </small>
+            <p>
+              Interaction Design for the web.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container right-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week4.html')">
+          <div class="text-box">
+            <h2>
+              Week 4
+            </h2>
+            <small>
+              Written by Caleb Calvin, 8 March 2024
+            </small>
+            <p>
+              IxD Process mashup.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container left-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week6.html')">
+          <div class="text-box left">
+            <h2>
+              Week 6
+            </h2>
+            <small>
+              Written by Caleb Calvin, 25 March 2024
+            </small>
+            <p>
+              The Ethics of UX Practice.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container right-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week8.html')">
+          <div class="text-box">
+            <h2>
+              Week 8
+            </h2>
+            <small>
+              Written by Caleb Calvin, 15 April 2024
+            </small>
+            <p>
+              Internet, Society and Design Justice.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container left-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week9.html')">
+          <div class="text-box left">
+            <h2>
+              Week 9
+            </h2>
+            <small>
+              Written by Caleb Calvin, 25 April 2024
+            </small>
+            <p>
+              The World in WWW.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container right-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week10.html')">
+          <div class="text-box">
+            <h2>
+              Week 10
+            </h2>
+            <small>
+              Written by Caleb Calvin, 29 April 2024
+            </small>
+            <p>
+              Digital Inequalities.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container left-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week11.html')">
+          <div class="text-box left">
+            <h2>
+              Week 11
+            </h2>
+            <small>
+              Written by Caleb Calvin, 03 May 2024
+            </small>
+            <p>
+              Decolonising Technology.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+      
+
+      <div class="container right-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week12.html')">
+          <div class="text-box">
+            <h2>
+              Week 12
+            </h2>
+            <small>
+              Written by Caleb Calvin, 13 May 2024
+            </small>
+            <p>
+              CSS & responsive-design.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="container left-container">
+            <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week13.html')">
+              <div class="text-box left">
+                <h2>
+                  Week 13
+                </h2>
+                <small>
+                  Written by Caleb Calvin, 20 May 2024
+                </small>
+                <p>
+                  Ethical Internet.
+                </p>
+                <span class="left-container-arrow"></span>
+              </div>
+            </a>
+          </div>
+
+      <div class="container right-container">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week14.html')">
+          <div class="text-box">
+            <h2>
+              Week 14
+            </h2>
+            <small>
+              Written by Caleb Calvin, 05 June 2024
+            </small>
+            <p>
+              Web API's.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <button class="backToTopBtn" onclick="scrollToTop()"> Top </button>
   </main>
 
   <footer>
-    <div >
-        <address>
-            <h2 class="contact-me-header">Contact me</h2>
-            Calebcalvin9@gmail.com<br>
+    <div>
+      <address>
+        <h2 class="contact-me-header">Contact me</h2>
 
-            University Of Witwatersrand<br>
+        Tel: 0626430668<br>
+        E-mail: Calebcalvin9@gmail.com<br>
+        University Of Witwatersrand<br>
+        Johannesburg<br>
+        South Africa<br>
+      </address>
 
-            Johannesburg<br>
+      <section class="footer-socials">
+        <p><span class="fn">&copy; 2024 My portfolio</span> | Created by Caleb Calvin.</p>
+        <a href="https://www.instagram.com/calebcameroncalvin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
 
-            South Africa<br>
-        </address>
+        <a href="https://www.linkedin.com/in/caleb-calvin-805857257/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
+          </svg>
+        </a>
 
-        <section class="footer-socials">
-            <p><span class="fn">&copy; 2024 My portfolio</span> | Created by Caleb Calvin.</p>
-            <a href="https://www.instagram.com/calebcameroncalvin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/caleb-calvin-805857257/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
-                </svg>
-            </a>
-
-            <a href="https://github.com/Wits-Digital-Arts-Interactive-Media/WSOA3028A_2565053">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z" />
-                </svg>
-            </a>
-        </section>
+        <a href="https://github.com/Wits-Digital-Arts-Interactive-Media/WSOA3028A_2565053">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z" />
+          </svg>
+        </a>
+      </section>
     </div>
-</footer>
+  </footer>
+
 </body>
 
 </html>

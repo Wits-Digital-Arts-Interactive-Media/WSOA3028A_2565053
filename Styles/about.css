@@ -14,7 +14,7 @@
 }
 
 #about-me-firstInfo {
-    border: 2.5px solid #011e30;
+    border: 1.5px solid #011e30;
     border-radius: 50px;
     grid-column: 1 / span 3;
     grid-row: 1;
@@ -80,23 +80,24 @@
 }
 
 #about-me-socials a {
-    color: aliceblue;
+    color: rgb(90, 101, 255);
     text-decoration: none;
     display: inline-block;
     transition: color 0.2s;
+    font-style: italic;
+    font-weight: 400;
 }
 
 #about-me-socials a:hover {
-    color: #676eb0;
+    color: #4650a5;
     text-decoration: underline;
+    font-weight: bold;
+}
+#about-me-socials h3{
+    margin-right: 30px;
 }
 
-#about-me-skills:hover,
-#about-me-programs:hover,
-#about-me-socials:hover {
-    transform: scale(1.05);
 
-}
 
 #photo-me {
     margin: 10px auto; 

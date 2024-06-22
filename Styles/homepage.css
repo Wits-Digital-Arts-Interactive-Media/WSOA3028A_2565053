@@ -21,7 +21,7 @@
     margin: 2px 25px 10px 25px;
     padding: 10px 20px 10px 20px;
     color: white;
-    background-color:#182b4d; ;
+    background-color:#0a1d3f;
     font-size: 1.85rem;
     text-align: center;
 }
@@ -44,7 +44,7 @@
     }
 }
 .content-item {
-    border: 1px solid #182b4d;
+    border: 1px solid #0a1d3f;
     border-radius: 10px; /* Rounded corners */
     padding: 0px 15px 20px 20px;
     margin: 10px 25px 15px 0px;

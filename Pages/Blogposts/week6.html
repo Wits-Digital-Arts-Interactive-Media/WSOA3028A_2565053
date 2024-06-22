@@ -4,66 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Caleb Calvin's Week 3 Blogpost - Reflecting on website alignment, site content, URL scheme, and semantic markup.">
+    <meta name="keywords"
+        content="Caleb Calvin, Week 3, Blogpost, Website Alignment, Site Content, URL Scheme, Semantic Markup">
+    <meta name="author" content="Caleb Calvin">
+
+    <meta property="og:title" content="Caleb Calvin's Week 3 Blogpost">
+    <meta property="og:description"
+        content="Reflecting on website alignment, site content, URL scheme, and semantic markup.">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Caleb Calvin's Portfolio">
+    <meta name="language" content="English">
     <link rel="stylesheet" href="../../Styles/main.css">
+    <link rel="stylesheet" href="../../Styles/blogsGeneral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <script src="../../Scripts/scrolleffect.js"></script>
     <script src="../../Scripts/blogsnav.js"></script>
-    <title>Week 6 blogpost</title>
+
+    <title>Week 6 Blogpost</title>
 </head>
 
 <body>
-    <main>
-        <article>
-            <h2 class="Page-header-identifier">Week 6</h2>
-            <section>
-                <h2>Reflection:</h2>
-                <p>
-                    In analyzing Deloitte's website, it's essential to move beyond surface-level observations and delve into the intricacies of its design and user experience. While the site benefits from the credibility of the Deloitte brand, its complexity may present challenges for analysis. To go deeper, we can scrutinize specific UX/UI elements, such as navigation pathways, information architecture, and interactive features, to understand how they contribute to the overall user experience.
-                </p>
-                <p>
-                    Moreover, we can critically assess how well Deloitte's website balances information dissemination with user engagement. Given its corporate nature, there might be a tendency to prioritize content delivery over interactive elements that enhance user experience. Exploring this balance and considering alternative design approaches could lead to valuable insights into optimizing corporate websites for both informational value and user engagement.
-                </p>
-                <p>
-                    Additionally, we can examine the website's personalization features, or lack thereof, and discuss their implications for user engagement and conversion rates. By comparing Deloitte's approach to personalization with industry best practices, we can offer recommendations for enhancing user experience through tailored content delivery.
-                </p>
-            </section>
 
-            <section>
-                <h2>Changes to Website for the Week:</h2>
+    <div class="main-section">
+        <div class="main-section-blogs">
+            <h2 class="blogs-week-header">
+                <i>
+                    Week 6
+                </i>
+            </h2>
 
-                <h3>Updated Folder Structure (Iteration 2)</h3>
-                <figure>
-                    <img src="../../Images/Web design/FolderStructure/FolderStructure-Iteration2.jpg" alt="Folder Structure Iteration 2">
-                    <figcaption>
-                        For my folder structure, I have opted to stick with my previous root folder to my main folders. Except with iteration 2, I am aiming to improve the idea of making certain aspects of my website more scalable, manageable as well as keeping my organization and content separation at its most organized state. Hence, the main changes I will make are regarding the additional folders I have opted to include. For each of the main 6 web pages. They will all have their folder, relating to the individual aspects of the website which I have broken up into 4 main sections. The HTML part, the CSS part, the Java, and lastly the images I am planning to include. These changes are purely for the improvement of the backend of my website, as the feedback I was given related to the notion of my current structure for my blog posts not being scalable. I then decided to look further into all of my folders and the solution above is what I derived at.
-                    </figcaption>
-                </figure>
 
-                <h3>Updated Corrections of Code and Semantic Markup Changes</h3>
-                <p>
-                    Taking the feedback into account, I looked back on my scripts. I made a lot of changes with regards to semantic markup. I have opted for the exact same structure for each page. I divided each page's section into 3 main tags: Header, Main, and Footer, and using this structure, I will build onto each section within these tags for each page. I have included an Hr tag as well, just for content separation and to make the overall code much easier to read and understand what was going on.
-                </p>
-                <p>
-                    Secondly, the feedback mentioned the inappropriate use of headers and microformatting. My solution to this was to have only 1 main H1 tag for every single HTML document, which I define as the 1 main Header defining the overall content for each page. Thereafter, every other heading was made an H2 to H6 depending on the heading.
-                </p>
-                <p>
-                    Lastly, with regards to shoehorning in divs, I have opted to use the section and article tags to define specific content and section off content not relating to each other, the aim was to improve the semantic markup and improve upon the hard coding of the same tags. I had learnt that it makes the HTML scripts much easier to read when using very specific semantic markup elements rather than making everything divs and giving them classes or IDs to define what they're meant to be instead of using semantic markup to define it for you. Which in essence actually makes my life easier and the person reading the script's life easier.
-                </p>
-            </section>
+            <h2 class="blogs-H2">Reflection:</h2>
+            <p class="blogs-paragraph">
+                In analyzing Deloitte's website, it's essential to move beyond surface-level observations and delve into
+                the intricacies of its design and user experience. While the site benefits from the credibility of the
+                Deloitte brand, its complexity may present challenges for analysis. To go deeper, we can scrutinize
+                specific UX/UI elements, such as navigation pathways, information architecture, and interactive
+                features, to understand how they contribute to the overall user experience.<br>
+                <br>
+                Moreover, we can critically assess how well Deloitte's website balances information dissemination with
+                user engagement. Given its corporate nature, there might be a tendency to prioritize content delivery
+                over interactive elements that enhance user experience. Exploring this balance and considering
+                alternative design approaches could lead to valuable insights into optimizing corporate websites for
+                both informational value and user engagement.<br>
+                <br>
+                Additionally, we can examine the website's personalization features, or lack thereof, and discuss their
+                implications for user engagement and conversion rates. By comparing Deloitte's approach to
+                personalization with industry best practices, we can offer recommendations for enhancing user experience
+                through tailored content delivery.
+            </p>
 
-            <section>
-                <h3>Code Changes and Reflection:</h3>
-                <p>
-                    This week, I focused on enhancing the semantic markup of my code to improve its readability and accessibility. By restructuring HTML elements and adhering to best practices, I aimed to create a more maintainable and user-friendly website. While not much new JavaScript functionality was added this week, I encountered challenges during navigation implementation. After hours of troubleshooting, I realized the importance of correct file paths in script initialization. The lesson learned emphasized the significance of attention to detail in web development, as even a small oversight like a missing full stop can lead to significant issues. Moving forward, I aim to leverage these insights to further refine both the user experience and codebase of my website, ensuring it remains a compelling and accessible digital destination.
-                </p>
+            <hr>
+            <h2 class="blogs-H2">Changes to Website for the Week:</h2>
 
-                <h3>Problems I ran into this week:</h3>
-                <p>I managed to get basic navigation, had a lot of problems with trying to get the nav bar to work and after hours of trying the i finally figured out the problem and all i was missing was a fullstop when I was trying to initliase my methods i found that i was calling the script from the correct folder I had to go twice out of the current directory of the html files i was trying to call the java script in, in  essence "../../" was what i was missing, was a tough one to digest.</p>
-            </section>
-        </article>
-          
-        <button class="btn-variation-3" onclick="scrollToTop()">Scroll up</button>
+            <h3>Updated Folder Structure (Iteration 2)</h3>
+            <figure>
+                <img src="../../Images/Web design/FolderStructure/FolderStructure-Iteration2.jpg"
+                    alt="Folder Structure Iteration 2">
+                <figcaption class="blogs-paragraph">
+                    For my folder structure, I have opted to stick with my previous root folder to my main folders.
+                    Except with iteration 2, I am aiming to improve the idea of making certain aspects of my website
+                    more scalable, manageable as well as keeping my organization and content separation at its most
+                    organized state. Hence, the main changes I will make are regarding the additional folders I have
+                    opted to include. For each of the main 6 web pages. They will all have their folder, relating to the
+                    individual aspects of the website which I have broken up into 4 main sections. The HTML part, the
+                    CSS part, the Java, and lastly the images I am planning to include. These changes are purely for the
+                    improvement of the backend of my website, as the feedback I was given related to the notion of my
+                    current structure for my blog posts not being scalable. I then decided to look further into all of
+                    my folders and the solution above is what I derived at.
+                </figcaption>
+            </figure>
 
-    </main>
+            <hr>
+            <h2 class="blogs-H2">Updated Corrections of Code and Semantic Markup Changes</h2>
+            <p class="blogs-paragraph">
+                Taking the feedback into account, I looked back on my scripts. I made a lot of changes with regards to
+                semantic markup. I have opted for the exact same structure for each page. I divided each page's section
+                into 3 main tags: Header, Main, and Footer, and using this structure, I will build onto each section
+                within these tags for each page. I have included an Hr tag as well, just for content separation and to
+                make the overall code much easier to read and understand what was going on.<br>
+                <br>
+                Secondly, the feedback mentioned the inappropriate use of headers and microformatting. My solution to
+                this was to have only 1 main H1 tag for every single HTML document, which I define as the 1 main Header
+                defining the overall content for each page. Thereafter, every other heading was made an H2 to H6
+                depending on the heading.<br>
+                <br>
+                Lastly, with regards to shoehorning in divs, I have opted to use the section and article tags to define
+                specific content and section off content not relating to each other, the aim was to improve the semantic
+                markup and improve upon the hard coding of the same tags. I had learnt that it makes the HTML scripts
+                much easier to read when using very specific semantic markup elements rather than making everything divs
+                and giving them classes or IDs to define what they're meant to be instead of using semantic markup to
+                define it for you. Which in essence actually makes my life easier and the person reading the script's
+                life easier.
+            </p>
+
+            <hr>
+            <h2 class="blogs-H2">Code Changes and Reflection:</h2>
+            <p class="blogs-paragraph">
+                This week, I focused on enhancing the semantic markup of my code to improve its readability and
+                accessibility. By restructuring HTML elements and adhering to best practices, I aimed to create a more
+                maintainable and user-friendly website. While not much new JavaScript functionality was added this week,
+                I encountered challenges during navigation implementation. After hours of troubleshooting, I realized
+                the importance of correct file paths in script initialization. The lesson learned emphasized the
+                significance of attention to detail in web development, as even a small oversight like a missing full
+                stop can lead to significant issues. Moving forward, I aim to leverage these insights to further refine
+                both the user experience and codebase of my website, ensuring it remains a compelling and accessible
+                digital destination.
+            </p>
+
+            <hr>
+            <h2 class="blogs-H2">Problems I ran into this week:</h2>
+            <p class="blogs-paragraph"> I managed to get basic navigation, had a lot of problems with trying to get the nav bar to work and after
+                hours of trying the i finally figured out the problem and all i was missing was a fullstop when I was
+                trying to initliase my methods i found that i was calling the script from the correct folder I had to go
+                twice out of the current directory of the html files i was trying to call the java script in, in essence
+                "../../" was what i was missing, was a tough one to digest.
+            </p>
+        </div>
+
+    </div>
+    <div class="button-container">
+        <button class="btn-variation-3" onclick="scrollToTop()">TOP</button>
+        <button class="btn-variation-3 Previous"> PREVIOUS </button>
+        <button class="btn-variation-3 Next"> NEXT </button>
+    </div>
+
+
+
+
+    </div>
+
 
 </body>
 
