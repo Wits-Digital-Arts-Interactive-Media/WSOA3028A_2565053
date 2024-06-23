@@ -277,6 +277,7 @@ span {
         margin-left: 0; 
         padding: 0;
         text-align: center; 
+        
     }
 
     header nav ul {
@@ -288,9 +289,14 @@ span {
     header nav ul li {
         margin-right: px; 
         margin-bottom: 0; 
+        
     }
-
-
+    header nav ul li a {
+        margin-right: px; 
+        margin-bottom: 0; 
+        color: #9f95df;
+        
+    }
     .Page-header-identifier {
         font-size: 1.5rem;
     }
