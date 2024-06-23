@@ -34,10 +34,10 @@
         }
     </script>
   <script src="../../Scripts/blogsnav.js"></script>
+  <script src="../../Scripts/scrolleffect.js"></script>
   <script src="../../Scripts/menu.js"></script>
   <script src="../../Scripts/navigation.js"></script>
   <script type="module">
-
     import { initialise } from "../../Scripts/menu.js";
     initialise("Blogs");
   </script>
@@ -58,9 +58,10 @@
       <h2 class="Page-header-identifier"> A collection of my weekly blogs</h2>
     </div>
 
-    <div id="blog-posts-container">
+    <hr style="margin: 0px 120px;">  
+    <div id="blog-posts-container" >
     </div>
-    
+
     <div class="timeline">
       <div class="container left-container">
         <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week1.html')">
@@ -214,7 +215,7 @@
           </div>
         </a>
       </div>
-      
+
 
       <div class="container right-container">
         <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week12.html')">
@@ -234,42 +235,23 @@
       </div>
 
       <div class="container left-container">
-            <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week13.html')">
-              <div class="text-box left">
-                <h2>
-                  Week 13
-                </h2>
-                <small>
-                  Written by Caleb Calvin, 20 May 2024
-                </small>
-                <p>
-                  Ethical Internet.
-                </p>
-                <span class="left-container-arrow"></span>
-              </div>
-            </a>
-          </div>
-
-      <div class="container right-container">
-        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week14.html')">
-          <div class="text-box">
+        <a href="#" onclick="loadBlogPost('../../Pages/Blogposts/week13.html')">
+          <div class="text-box left">
             <h2>
-              Week 14
+              Week 13
             </h2>
             <small>
-              Written by Caleb Calvin, 05 June 2024
+              Written by Caleb Calvin, 20 May 2024
             </small>
             <p>
-              Web API's.
+              Ethical Internet.
             </p>
-            <span class="right-container-arrow"></span>
+            <span class="left-container-arrow"></span>
           </div>
         </a>
       </div>
-    </div>
 
-
-    <button class="backToTopBtn" onclick="scrollToTop()"> Top </button>
+    <button class="backToTopBtn" onclick="scrollToTop()"> ↑ </button>
   </main>
 
   <footer>
@@ -310,7 +292,6 @@
       </section>
     </div>
   </footer>
-
 </body>
 
 </html>

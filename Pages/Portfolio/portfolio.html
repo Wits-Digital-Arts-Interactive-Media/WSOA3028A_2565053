@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../../Styles/main.css">
     <link rel="stylesheet" href="../../Styles/portoflio.css">
+
     <script type="module">
         import { initialise } from "../../Scripts/menu.js";
         initialise("Portfolio");
@@ -27,7 +28,8 @@
             }
         }
     </script>
-    <script src="../../Scripts/navigation.js"></script>
+    <script src="../../Scripts/scrolleffect.js"></script>
+    <script src="../../Scripts/portfolio.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -48,12 +50,12 @@
         <div id="Personal-Projects-container">
             <section id="Game1" class="projects-item">
                 <h3 class="projects-container-header">My FPS shooter</h3>
-                <img src="../../Images/Portfolio/GameScreenshot.png" style="size: 100px;">
+                <img src="../../Images/Portfolio/FPS-Shooter.png" style="size: 100px;">
                 <p class="projects-container-paragraph"> A FPS shooter project developed by me over the course of my first semester
                     in Third Year as an exam submission.
-        
                 </p>
                 <button class="btn-variation-2" onclick="downloadGame('https://drive.google.com/uc?export=download&id=1jyuVm1xY9CBITiWZC1aU23c6CMotnYV_')">Download</button>
+           
             </section>
 
             <section id="Game2" class="projects-item">
@@ -71,7 +73,6 @@
                     game I had ever developed.
                 </p>
                 <button class="btn-variation-2" onclick="downloadGame('https://drive.google.com/uc?export=download&id=1CvK0Yvu_QI0Mdp3KX-UlLcQHjjGwuzdh')">Download</button>
-            </section>
         </div>
         <hr>
 
@@ -79,7 +80,7 @@
         <div id="Group-Projects-container">
             <section id="group-projects-header" class="projects-item">
                 <h3>Ancient Egypt</h3>
-                <img src="../../Images/Portfolio/GameScreenshot.jpg" class="projects-item-image">
+                <img src="../../Images/Portfolio/GameScreenshot.png" class="projects-item-image">
                 <p class="projects-container-paragraph">This prototype was developed for a final
                     examination by 3 group members
                     and myself.
@@ -92,15 +93,9 @@
             </section>
 
             <section id="group-projects-header" class="projects-item">
-                <h3>Ancient Egypt</h3>
-                <img src="../../Images/Portfolio/GameScreenshot.jpg" class="projects-item-image">
-                <p class="projects-container-paragraph">This prototype was developed for a final
-                    examination by 3 group members
-                    and myself.
-                    I was in charge of a large part ofthe development of the game,
-                    from the programming side. The game
-                    was complex in the context of the
-                    systems we were trying to implement, coupled with numerous narrative elements.
+                <h3>Projects coming soon..</h3>
+
+                <p class="projects-container-paragraph">
                 </p>
                 <button class="btn-variation-2" id="Game-2">
                     Download
@@ -108,21 +103,15 @@
             </section>
 
             <section id="group-projects-header" class="projects-item">
-                <h3>Ancient Egypt</h3>
-                <img src="../../Images/Portfolio/GameScreenshot.jpg" class="projects-item-image">
-                <p class="projects-container-paragraph">This prototype was developed for a final
-                    examination by 3 group members
-                    and myself.
-                    I was in charge of a large part ofthe development of the game,
-                    from the programming side. The game
-                    was complex in the context of the
-                    systems we were trying to implement, coupled with numerous narrative elements.
+                <h3>Projects coming soon..</h3>
+         
+                <p class="projects-container-paragraph">
                 </p>
                 <button class="btn-variation-2" id="Game-2">
                     Download
                 </button>
             </section>
-            <button class="backToTopBtn" onclick="scrollToTop()"> Top </button>
+            <button class="backToTopBtn" onclick="scrollToTop()"> ↑ </button>
         </div>
     </main>
 
@@ -130,12 +119,11 @@
         <div >
             <address>
                 <h2 class="contact-me-header">Contact me</h2>
-                Calebcalvin9@gmail.com<br>
 
+                Tel: 0626430668<br>
+                E-mail: Calebcalvin9@gmail.com<br>
                 University Of Witwatersrand<br>
-    
                 Johannesburg<br>
-    
                 South Africa<br>
             </address>
 

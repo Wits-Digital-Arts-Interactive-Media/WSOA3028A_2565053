@@ -16,8 +16,6 @@
     <meta name="language" content="English">
     <link rel="stylesheet" href="./Styles/main.css">
     <link rel="stylesheet" href="./Styles/homepage.css">
-    <link rel="stylesheet" href="./Styles/responsive-design">
-
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -39,7 +37,7 @@
     <script src="./Scripts/menu.js" type="module"></script>
     <!---Index page - streamline navigation and index page effects-->
     <script src="./Scripts/indexpage.js"></script>
-    <script src="./Scripts/navigation.js"></script>
+    <script src="./Scripts/scrolleffect.js"></script>
     <title>Home</title>
 </head>
 
@@ -62,7 +60,7 @@
         <h2 id="content-header"> Content</h2>
 
         <div id="Content-section" class="grid-container">
-            <section class="content-item">
+            <section class="content-item" id="item1">
                 <h3 style="font-size: 1.5rem;">
                     Blogs
                 </h3>
@@ -71,7 +69,7 @@
                 <button class="btn-variation-3" onclick="loadlatestBlogPage()">Read more</button>
             </section>
 
-            <section class="content-item">
+            <section class="content-item" id="item2">
                 <h3 style="font-size: 1.5rem;"> 
                     Essays
                 </h3>
@@ -80,7 +78,7 @@
                 <button class="btn-variation-3" onclick="loadEssayPage()">Take me there</button>
             </section>
 
-            <section class="content-item">
+            <section class="content-item" id="item3">
                 <h3 style="font-size: 1.5rem;">
                     Portfolio  
                 </h3>
@@ -89,7 +87,7 @@
                 <button class="btn-variation-3" onclick="loadPortfolioPage()">View </button>
             </section>
 
-            <section class="content-item">
+            <section class="content-item" id="item4">
                 <h3 style="font-size: 1.5rem;">
                     Website Design
                 </h3>
@@ -132,7 +130,8 @@
 
             </section>
         </div>
-        <button class="backToTopBtn" onclick="scrollToTop()"> Top </button>
+        
+        <button class="backToTopBtn" onclick="scrollToTop()"> ↑ </button>
     </main>
 
 

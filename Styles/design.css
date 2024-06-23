@@ -5,46 +5,166 @@ main {
 .design-header {
     margin: 0;
     padding: 0;
-    margin-bottom: 1px; 
+    margin-bottom: 1px;
 }
 
 #iteration-1-Content {
-    border: 1.5px solid #011e30;
+    box-shadow: 0 10px 10px rgba(124, 122, 189, 0.734);
     text-align: center;
-    margin-bottom: 25px; 
-    padding: 20px; 
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.design-content-container {
+    margin-top: 20px;
+    border: 1px;
+    border-radius: 10px;
+
 }
 
 #iteration-2-Content {
-    border: 1.5px solid #011e30;
+    box-shadow: 0 10px 10px rgba(124, 122, 189, 0.734);
     text-align: center;
-    margin-bottom: 25px;  
-    padding: 20px 50px 20px 50px; 
+    margin-bottom: 25px;
+    padding: 20px 50px 20px 50px;
 }
+
 #iteration-3-Content {
-    border: 1.5px solid #011e30;
+
     text-align: center;
-    padding: 20px 50px 20px 50px; 
-    margin-bottom: 25px; 
+    padding: 20px 50px 20px 50px;
+    margin-bottom: 25px;
 }
 
 #iteration-1-Content,
 #iteration-2-Content,
 #iteration-3-Content {
-    opacity: 0.7; 
-    background-color: rgba(255, 255, 255, 0); 
-    transition: background-color 1s ease-in-out, opacity 3s ease-in-out; 
+    background-color: white;
+    transition: background-color 1s ease-in-out, opacity 3s ease-in-out;
+    border-radius: 10px;
+    margin: 25px 25px;
 }
 
 
-#iteration-1-Content:hover,
-#iteration-2-Content:hover,
-#iteration-3-Content:hover {
-    opacity: 1; 
-    background-color: rgb(164, 196, 216); 
-}
 
 .design-header {
     font-size: 18px;
-    margin-bottom: 1px; 
+    margin-bottom: 1px;
+}
+
+/* Global Styles */
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+main {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #0a1d3f;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+article {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #0a1d3f;
+}
+
+
+
+img {
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+td ul li{
+    font-size: 0.8rem;
+}
+                            
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* Button Styles */
+.btn-variation-2 {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-variation-2:hover {
+    background-color: #23527c;
+}
+
+/* ID Styles */
+#Design-header-Conent {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#Design-Paragraph-Style1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#InformationStructure-Photo,
+#UserFlow-Photo {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.design-content-container {
+    border: 0.5px solid #0a1d3f;
+    margin: 10px 20px;
 }

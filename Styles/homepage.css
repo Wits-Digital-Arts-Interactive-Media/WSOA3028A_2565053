@@ -25,11 +25,6 @@
     font-size: 1.85rem;
     text-align: center;
 }
-#Content-section{
-    margin: 0px 150px;
-    color: #A6B9C8;
-    
-}
 
 /*4x4 grid for easy access*/
 .grid-container {
@@ -37,6 +32,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1px; 
 }
+
 
 @keyframes fadeIn {
     to {
@@ -47,7 +43,6 @@
     border: 1px solid #0a1d3f;
     border-radius: 10px; /* Rounded corners */
     padding: 0px 15px 20px 20px;
-    margin: 10px 25px 15px 0px;
     text-align: center;
     color: #011e30;
     background-color: #eef1f3;
@@ -108,4 +103,11 @@ img {
     margin-top: 10px;
     font-weight: bold;
 }
-
+@media only screen and (max-width: 375px) {
+    .grid-container{
+        margin: 20px;
+    }    
+    .content-item{
+       padding: 10px;
+    }
+}

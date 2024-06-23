@@ -16,9 +16,10 @@ main {
 }
 
 #blog-posts-container {
-    border: 1px solid;
+   
     border-radius: 10px;
-    margin: 100px 100px;
+    box-shadow: 0 10px 10px rgba(124, 122, 189, 0.734);
+    margin: 50px 100px;
 }
 
 .week-dropdown {
