@@ -59,10 +59,9 @@ header nav ul li a.active {
 /*Text formatting*/
 #Main-Header {
     font-size: 1.2rem;
-    margin: 25px 0px 25px 25px;
+    margin: 15px 0px 15px 25px;
     color: white;
     top: -100px;
-    width: 20%;
     opacity: 0;
     animation: slideFromTop 1.5s forwards;
 }
@@ -270,7 +269,7 @@ span {
 @media (max-width: 600px) {
     header {
         flex-direction: column; /* Stack items vertically */
-        padding: 15px 0; /* Adjust padding as needed */
+        padding: 10px 0; /* Adjust padding as needed */
     }
 
     nav {
@@ -283,11 +282,11 @@ span {
     header nav ul {
         flex-direction: row; /* Display nav items horizontally */
         justify-content: center; /* Center align nav items */
-        margin-top: 10px; /* Add space above nav items */
+        margin-top: 5px; /* Add space above nav items */
     }
 
     header nav ul li {
-        margin-right: 10px; /* Add space between nav items */
+        margin-right: px; /* Add space between nav items */
         margin-bottom: 0; /* Reset bottom margin */
     }
 
