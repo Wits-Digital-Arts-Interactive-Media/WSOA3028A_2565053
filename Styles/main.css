@@ -58,8 +58,8 @@ header nav ul li a.active {
 
 /*Text formatting*/
 #Main-Header {
-    font-size: 1.5rem;
-    margin: 25px;
+    font-size: 1.2rem;
+    margin: 25px 0px 25px 25px;
     color: white;
     top: -100px;
     width: 20%;
@@ -89,9 +89,7 @@ header nav ul li a.active {
 
 h1 {
     text-align: center;
-    margin: 0px;
-    padding: 0px;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: #A6B9C8;
 }
 
@@ -266,4 +264,69 @@ address {
 
 span {
     color: #2200ff;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        padding: 15px 0; /* Adjust padding as needed */
+    }
+
+    nav {
+        order: 1; /* Move nav below header */
+        margin-left: 0; /* Reset margin */
+        padding: 0;
+        text-align: center; /* Center align nav items */
+    }
+
+    header nav ul {
+        flex-direction: row; /* Display nav items horizontally */
+        justify-content: center; /* Center align nav items */
+        margin-top: 10px; /* Add space above nav items */
+    }
+
+    header nav ul li {
+        margin-right: 10px; /* Add space between nav items */
+        margin-bottom: 0; /* Reset bottom margin */
+    }
+
+
+    .Page-header-identifier {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-variation-1,
+    .btn-variation-2,
+    .btn-variation-3 {
+        font-size: 0.875rem;
+        padding: 8px 15px;
+    }
+
+    .backToTopBtn {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 0px 10px 0px 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    address {
+        margin-left: 0px;
+        text-align: center;
+    }
 }

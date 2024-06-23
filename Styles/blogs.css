@@ -229,6 +229,16 @@ main {
 }
 
 @media screen and (max-width : 600px) {
+    .Header{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .navList{
+        width: 100%;
+    }
+
     .timeline {
         margin: 50px auto;
     }
