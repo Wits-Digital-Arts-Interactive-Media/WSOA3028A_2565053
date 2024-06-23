@@ -268,26 +268,26 @@ span {
 /* Media Queries */
 @media (max-width: 600px) {
     header {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px 0; /* Adjust padding as needed */
+        flex-direction: column; 
+        padding: 10px 0; 
     }
 
     nav {
-        order: 1; /* Move nav below header */
-        margin-left: 0; /* Reset margin */
+        order: 1; 
+        margin-left: 0; 
         padding: 0;
-        text-align: center; /* Center align nav items */
+        text-align: center; 
     }
 
     header nav ul {
-        flex-direction: row; /* Display nav items horizontally */
-        justify-content: center; /* Center align nav items */
-        margin-top: 5px; /* Add space above nav items */
+        flex-direction: row;
+        justify-content: center; 
+        margin-top: 5px; 
     }
 
     header nav ul li {
-        margin-right: px; /* Add space between nav items */
-        margin-bottom: 0; /* Reset bottom margin */
+        margin-right: px; 
+        margin-bottom: 0; 
     }
 
 

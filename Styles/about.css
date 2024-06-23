@@ -4,7 +4,8 @@
 
 .about-me-content-container {
     display: grid;
-    grid-template-columns: 0.8fr 0.8fr 1fr; /* Three columns */
+    grid-template-columns: 0.8fr 0.8fr 1fr;
+    /* Three columns */
     gap: 20px;
 }
 
@@ -27,8 +28,7 @@
     text-align: center;
 }
 
-#about-me-skills
-{
+#about-me-skills {
     border: 1.5px solid #011e30;
     border-radius: 50px;
     grid-column: 2;
@@ -57,7 +57,7 @@
 #about-me-socials {
     border: 1.5px solid #011e30;
     border-radius: 50px;
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 2;
     margin: 10px 0px 0px 100px;
     padding: 5px 40px;
@@ -71,12 +71,12 @@
 #about-me-socials ul {
     list-style-type: none;
     padding: 0;
-    
+
 }
 
 #about-me-socials li {
     margin: 10px 0;
-   
+
 }
 
 #about-me-socials a {
@@ -93,17 +93,47 @@
     text-decoration: underline;
     font-weight: bold;
 }
-#about-me-socials h3{
+
+#about-me-socials h3 {
     margin-right: 30px;
 }
 
 
 
 #photo-me {
-    margin: 10px auto; 
+    margin: 10px auto;
     height: 40%;
     width: 200px;
     border-radius: 10px;
-    justify-self: center; 
-    align-self: center; 
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 120px;
+    }
+
+    .about-me-content-container {
+        display: block;
+    }
+
+
+    #about-me-firstInfo,
+    #about-me-skills,
+    #about-me-programs,
+    #about-me-socials li {
+        margin: 10px 0;
+        grid-column: unset;
+        grid-row: unset;
+        width: auto;
+    }
+
+
+    #about-me-firstInfo,
+    #about-me-skills,
+    #about-me-programs {
+        padding: 10px;
+    }
+
 }

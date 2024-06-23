@@ -104,9 +104,9 @@ img {
 }
 
 /* Media Queries */
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     .Hero {
-        margin: 30px 10px; /* Further reduce margins for smaller screens */
+        margin: 75px 0px; /* Further reduce margins for smaller screens */
     }
     .Api-section {
         text-align: left;
