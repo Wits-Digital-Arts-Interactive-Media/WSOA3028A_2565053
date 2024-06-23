@@ -1,14 +1,12 @@
 /*hero*/
 .Hero {
-    margin: 135px 15px 15px 15px;
+    margin: 150px 15px 15px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 0;
     animation: fadeIn 5s forwards;
 }
-
-
 
 /*Content section after hero*/
 .blog-content{
@@ -104,9 +102,13 @@ img {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .Hero {
-        margin: 75px 0px; /* Further reduce margins for smaller screens */
+        text-align: center;
+    }
+
+    #sub-heading {
+        text-align: center;
     }
     .Api-section {
         text-align: left;
